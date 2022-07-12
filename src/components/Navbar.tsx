@@ -8,6 +8,7 @@ import { useState } from "react";
 
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
+import WirklichLogo from "../Static/svg/WirklichLogo";
 
 export function Navbar() {
 
@@ -31,7 +32,7 @@ export function Navbar() {
             <Container>
                 <Box display="flex" alignItems='center'>
                     <Box flex={1}>
-                       <Link to="/"><Image source="/src/assets/images/logo_wirklich.svg" alt="Logo Wirklich"/></Link> 
+                       <Link to="/"><WirklichLogo /></Link> 
                     </Box>
 
                     <Box className="hidden lg:block">

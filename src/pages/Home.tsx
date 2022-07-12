@@ -41,7 +41,7 @@ export function Home() {
     return (
         <>
         <Navbar />
-        <BackgroundHeader imageSource="../src/assets/images/home/bg-hero.png" heightSize={80}>
+        <BackgroundHeader imageSource="https://uploaddeimagens.com.br/images/003/938/347/full/bg-hero.png?1657627565" heightSize={80}>
          <Container>
             <Box className="w-full lg:w-[60%] xl:w-[48%]">
             <StyledH1>
