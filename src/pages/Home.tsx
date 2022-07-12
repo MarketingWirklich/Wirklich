@@ -220,7 +220,7 @@ export function Home() {
                 </Box>
 
                 <Box>
-                    
+
                 </Box>
             </StyledBox>
             
