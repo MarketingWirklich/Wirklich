@@ -1,4 +1,3 @@
-import GlobalStyles from "./GlobalStyles";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./components/Router";
 
@@ -13,7 +12,6 @@ function App() {
   return (
     
     <ApolloProvider client={client}>
-    <GlobalStyles />
     <BrowserRouter>
       <Router />
 
