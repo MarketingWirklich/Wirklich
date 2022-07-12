@@ -4,8 +4,8 @@ import { Navbar } from "../components/Navbar";
 import { Container } from "../styled-components/Container";
 import { StyledH1, StyledH2, StyledH3 } from "../styled-components/StyledH1";
 import { StyledP } from "../styled-components/StyledP";
-
-import { Player, Video, DefaultUi } from '@vime/react';
+ 
+import { Player, DefaultUi, Vimeo } from '@vime/react';
 import '@vime/core/themes/default.css';
 
 {/* Import de SVG's */}
@@ -162,10 +162,10 @@ export function Home() {
                     </StyledH2>
                     <Box className="mt-10">
                         <Box className="flex justify-between md:w-[70%] lg:w-full">
-                        <img src="../src/assets/images/home/foto_das_maquinas.png" alt="" />
+                        <img src="https://uploaddeimagens.com.br/images/003/938/357/full/foto_das_maquinas.png?1657628151" alt="" />
                         <Box className="relative">
-                        <img className="w-[140px] max-w-[140px] sm:w-[180px] sm:max-w-[180px] h-[160px] sm:h-[261px] absolute sm:static right-0 -top-5" src="../src/assets/images/home/foto_das_maquinas2.png" alt="" />
-                        <img className="absolute w-[250px] max-w-[250px] right-0 bottom-6" src="../src/assets/images/home/tecnologia.png" alt="" />
+                        <img className="w-[140px] max-w-[140px] sm:w-[180px] sm:max-w-[180px] h-[160px] sm:h-[261px] absolute sm:static right-0 -top-5" src="https://uploaddeimagens.com.br/images/003/938/358/full/foto_das_maquinas2.png?1657628173" alt="" />
+                        <img className="absolute w-[250px] max-w-[250px] right-0 bottom-6" src="https://uploaddeimagens.com.br/images/003/938/361/full/tecnologia.png?1657628259" alt="" />
                         </Box>
                         </Box>
 
@@ -220,7 +220,7 @@ export function Home() {
                 </Box>
 
                 <Box>
-
+                    <img src="https://uploaddeimagens.com.br/images/003/938/359/full/novo_caminho_da_inovacao.png?1657628211" alt="" />
                 </Box>
             </StyledBox>
             
@@ -235,15 +235,8 @@ export function Home() {
         >
         <Box className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[95%] lg:w-[60%]">
         <Player>
-        <Video crossOrigin="">
-        {/* These are passed directly to the underlying HTML5 `<video>` element. */}
-        {/* Why `data-src`? Lazy loading, you can always use `src` if you prefer.  */}
-        <source
-          data-src="../src/assets/video/modalVideo.mp4"
-          type="video/mp4"
-        />
-        
-      </Video>
+        <Vimeo videoId="729188662" />
+    
 
         <DefaultUi noClickToPlay>
         {/* We can place our own UI components here to extend the default UI. */}
