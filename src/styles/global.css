@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Myriad Regular';
+    src: url(/src/assets/fonts/MYRIADPRO-REGULAR.OTF);
+}
+
+@font-face {
+    font-family: 'Made Light';
+    src: url(/src/assets/fonts/MADE\ Outer\ Sans\ Light\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: 'Myriad SemiBold';
+    src: url(/src/assets/fonts/MYRIADPRO-SEMIBOLD.OTF);
+}
+
+@font-face {
+    font-family: 'Myriad Bold';
+    src: url(/src/assets/fonts/MYRIADPRO-BOLD.OTF);
+}
+
+.menu-gradiente {
+
+    background-image: url(/src/assets/images/bg-menu.png);
+    background-size: fill;
+}
+
+.styled-scrollbar::-webkit-scrollbar
+{
+
+    background-color: transparent;
+    height: 3px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+
+    background-color: #81D742;
+    border-radius: 100px;
+
+}
+
+.styled-scrollbar::-webkit-scrollbar-track {
+
+    background: rgba(128, 128, 128, 0.149);
+    opacity: 0.3;
+}
+
+.styled-scrollbar::-webkit-scrollbar-button:start:decrement,
+.styled-scrollbar::-webkit-scrollbar-button:end:increment  {
+	display: block;
+}
+
+.styled-scrollbar {
+
+    scrollbar-color: #81D742;
+    scrollbar-width: thin;
+}
+
+.bg-modal {
+
+    background-image: url(/src/assets/images/home/bg-modal.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+html {
+
+    font-size: 100%;
+}
+
+@media screen and (max-width: 1558px) {
+    
+    html {
+        
+        font-size: 90%;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    html {
+
+        font-size: 85%;
+    }
+}
+
