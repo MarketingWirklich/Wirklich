@@ -1,4 +1,11 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+type Props = {
+
+    white?: boolean
+    semiTitle?: boolean
+    semiTitleMyriad?: boolean
+}
 
 export const StyledH1 = styled.h1 `
 
@@ -18,7 +25,7 @@ export const StyledH1 = styled.h1 `
 
 `
 
-export const StyledH2 = styled.h2 `
+export const StyledH2 = styled.h2<Props> `
 
     color: #002137;
     font-size: 2.25rem;
@@ -26,17 +33,37 @@ export const StyledH2 = styled.h2 `
     line-height: 1.65;
     margin-bottom: 1rem;
 
+    ${props => props.white && css`
+    color: #FFF;
+    margin-bottom: 0;
+    `
+    }
+
    
 
 `
 
-export const StyledH3 = styled.h3 `
+export const StyledH3 = styled.h3<Props> `
 
     color: #002137;
     font-size: 1.5rem;
     font-family: 'Made Light';
     line-height: 1.65;
     margin-bottom: 1rem;
+
+    ${props => props.semiTitle && css`
+        font-size: 1.375rem;
+    `
+    }
+
+    ${props => props.semiTitleMyriad && css `
+    
+    font-size: 1.375rem;
+    font-family: 'Myriad SemiBold';
+    
+    `
+    
+    }
 
    
 

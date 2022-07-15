@@ -1,0 +1,9 @@
+query GetBlogContents {
+  blogContents (orderBy: publishedAt_ASC, stage: PUBLISHED) {
+    id
+    image
+    slug
+    title
+    description
+  }
+}

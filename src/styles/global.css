@@ -37,7 +37,7 @@
 
 .styled-scrollbar::-webkit-scrollbar-thumb {
 
-    background-color: #81D742;
+    background-color: #006CC9;
     border-radius: 100px;
 
 }
@@ -55,7 +55,7 @@
 
 .styled-scrollbar {
 
-    scrollbar-color: #81D742;
+    scrollbar-color: #006CC9;
     scrollbar-width: thin;
 }
 
@@ -67,9 +67,68 @@
     
 }
 
+.bg-footerbanner {
+
+    background-image: url(https://uploaddeimagens.com.br/images/003/943/670/full/Grupo_1153.png?1657906592);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel {
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+    
+    
+}
+
+.carousel::-webkit-scrollbar {
+
+    display: none;
+}
+
+.shadow-card {
+
+    box-shadow: 0px 3px 15px #0000000b;
+}
+
+.article-gradient {
+
+    background-image: linear-gradient(to right, #b30c13, #bb2c21, #c2402e, #c9523c, #cf624b);
+}
+
+@keyframes arrowAnima {
+
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+
+        transform: translateX(0px);
+
+    }
+}
+
+.group:hover .group-hover {
+
+    animation: arrowAnima 1s infinite alternate-reverse;
+}
+
 html {
 
     font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1558px) {
