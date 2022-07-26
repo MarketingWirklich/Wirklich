@@ -5,6 +5,7 @@ type Props = {
     white?: boolean
     semiTitle?: boolean
     semiTitleMyriad?: boolean
+    fontFamily?: string
 }
 
 export const StyledH1 = styled.h1 `
@@ -47,7 +48,7 @@ export const StyledH3 = styled.h3<Props> `
 
     color: #002137;
     font-size: 1.5rem;
-    font-family: 'Made Light';
+    font-family: ${props => props.fontFamily? props.fontFamily : 'Made Light'};
     line-height: 1.65;
     margin-bottom: 1rem;
 

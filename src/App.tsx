@@ -3,18 +3,21 @@ import { Router } from "./components/Router";
 
 import { ApolloProvider } from '@apollo/client'
 import { client } from './lib/apollo'
+import { MenuContext, useDrawerContext } from "./Contexts/MainContext";
 
 function App() {
-
 
   
 
   return (
     
     <ApolloProvider client={client}>
+    
     <BrowserRouter>
-      <Router />
+    <MenuContext>
+    <Router />
 
+    </MenuContext>
     </BrowserRouter>
     </ApolloProvider>
  

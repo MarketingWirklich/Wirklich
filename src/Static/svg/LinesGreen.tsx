@@ -3,20 +3,20 @@ import * as React from "react"
 const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={17.713}
-    height={18.541}
+    width={252.545}
+    height={127.479}
     {...props}
   >
-    <g
-      data-name="Icon feather-arrow-right"
+    <path
+      data-name="Caminho 651"
+      d="M1 1h239.409c6.149 0 11.135 3.714 11.135 8.3v117.179"
       fill="none"
+      stroke="rgba(3,138,22,0.25)"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-    >
-      <path data-name="Caminho 5" d="M8.856 1.414 1 9.27l7.856 7.856" />
-      <path data-name="Caminho 4" d="M16.713 9.27H1" />
-    </g>
+      strokeDasharray="10 20"
+    />
   </svg>
 )
 

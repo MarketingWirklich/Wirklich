@@ -5,7 +5,12 @@ import { StyledP } from "../styled-components/StyledP";
 
 import { AiOutlineArrowDown } from 'react-icons/ai'
 
-export function FooterBanner() {
+type Props = {
+
+    onClick?: () => void;
+}
+
+export function FooterBanner({onClick}: Props) {
 
     return (
 
@@ -28,7 +33,7 @@ export function FooterBanner() {
                 </Box>
 
                 <Box className="flex justify-center w-full">
-                    <StyledButton to='/contato'>
+                    <StyledButton onClick={onClick} to='/contato'>
                         Fale com nossa equipe
                     </StyledButton>
                 </Box>

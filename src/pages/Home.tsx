@@ -26,18 +26,34 @@ import { StyledBox } from "../styled-components/StyledBox";
 import YoutubePlayer from "../Static/svg/YoutubePlayer";
 import { useEffect, useRef, useState } from "react";
 import SlideArrow from "../Static/svg/SlideArrow";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { AiOutlineArrowRight, AiOutlineMail } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
 import { StyledInput } from "../styled-components/StyledInput";
 import { FooterBanner } from "../components/FooterBanner";
 import { Footer } from "../components/Footer";
+import { ScrollToTop } from "../components/ScrollToTop";
+
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper";
+import { WhatsappButton } from "../components/WhatsappButton";
+import { useDrawerContext } from "../Contexts/MainContext";
 
 
 export function Home() {
 
-
+    
+    const {scrollToTop} = useDrawerContext()
 
     const [modalOpen, setModalOpen] = useState(false)
     const handleOpenModal = () => setModalOpen(true);
@@ -46,7 +62,9 @@ export function Home() {
    
 
     const carousel = useRef<any>()
+    const carousel2 = useRef<any>()
     const slide = useRef<any>()
+    const slide2 = useRef<any>()
     const margin = 40
 
 
@@ -60,6 +78,71 @@ export function Home() {
         carousel.current.scrollLeft += slide.current.offsetWidth + margin
     }
 
+    const slidePrev2 = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        carousel2.current.scrollLeft -= slide2.current.offsetWidth + margin
+    }
+   
+    const slideNext2 = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        carousel2.current.scrollLeft += slide2.current.offsetWidth + margin
+    }
+
+    const control = useAnimation()
+    const control2 = useAnimation()
+    const control3 = useAnimation()
+    const [ref, inView] = useInView()
+
+    const [ref2, inView2] = useInView()
+    const [ref3, inView3] = useInView()
+
+    const leftAnima = {
+        visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+        hidden: { opacity: 0, x: -500 }
+      };
+
+      const rightAnima = {
+        visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
+        hidden: { opacity: 0, x: 500 }
+      };
+
+      const downAnima = {
+        visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+        hidden: { opacity: 0, y: 500 }
+      };
+
+      const scaleAnima = {
+        visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+        hidden: { opacity: 0, scale: 0 }
+      };
+
+
+
+
+      useEffect(() => {
+        if (inView) {
+          control.start("visible");
+        } else {
+          control.start("hidden");
+        }
+      }, [control, inView]);
+
+      useEffect(() => {
+        if (inView2) {
+          control2.start("visible");
+        } else {
+          control2.start("hidden");
+        }
+      }, [control2, inView2]);
+
+      useEffect(() => {
+        if (inView3) {
+          control3.start("visible");
+        } else {
+          control3.start("hidden");
+        }
+      }, [control3, inView3]);
+
    
 
     
@@ -67,20 +150,44 @@ export function Home() {
     return (
         <div>
         <Navbar />
-        <BackgroundHeader imageSource="https://uploaddeimagens.com.br/images/003/938/347/full/bg-hero.png?1657627565" heightSize={80}>
-         <Container>
-            <Box className="w-full lg:w-[60%] xl:w-[48%]">
-            <StyledH1>
-            Soluções tecnológicas e sustentáveis em polímeros de engenharia
-            </StyledH1>   
-            <StyledP color="#FFF" className="mt-10" fontFamily="Myriad Regular">
-            A Wirklich é movida pelo desafio de encontrar soluções criativas e eficientes para substituir a aplicação de materiais, como o metal e a borracha, pelo plástico.
-            </StyledP>
-            </Box>
-         </Container>
-        </BackgroundHeader>
+        <Swiper navigation={true}
+        loop={true}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+          }}
+          
+        modules={[Navigation, Autoplay]} className="mySwiper">
+        <SwiperSlide className="w-full slide-1 h-[550px] sm:h-[700px]">
+            <Container className="h-full">
+                <Box className="flex flex-col justify-center h-full">
+                <Box className="lg:w-[55%] xl:w-[45%] mb-10">
+                    <StyledH1>
+                        Qualidade e precisão na injeção de polímeros de engenharia
+                    </StyledH1>
+                </Box>
+
+                <Box className="lg:w-[44%]">
+                    <StyledP color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
+                        A Wirklich é movida pelo desafio de encontrar <StyledSpan fontFamily="Myriad Bold">soluções criativas</StyledSpan> e eficientes para substituir a aplicação de materiais, como o metal e a borracha, pelo plástico.
+                    </StyledP>
+                </Box>
+                </Box>
+            </Container>
+        </SwiperSlide>
+        <SwiperSlide className="w-full slide-2 h-[550px] sm:h-[700px]">
+
+        </SwiperSlide>
+        <SwiperSlide className="w-full slide-3 h-[550px] sm:h-[700px]">
+        <Box className="lg:w-[55%] xl:w-[50%] mb-10">
+                    <StyledH1>
+                        Tecnologia de ponta na transformação de pecas metálicas em pecas de polímeros de alta performance
+                    </StyledH1>
+                </Box>
+        </SwiperSlide>
+      </Swiper>
         <Container>
-            <Box className="-translate-y-[60px] shadow-md flex-col sm:flex-row sm:items-center px-10 justify-between py-16 sm:py-10" display='flex' bgcolor='#FFF' borderRadius={2} width='100%'>
+            <Box className="-translate-y-[60px] shadow-md flex-col sm:flex-row sm:items-center px-10 justify-between py-16 sm:py-10 z-30 relative" display='flex' bgcolor='#FFF' borderRadius={2} width='100%'>
               <Box className="overflow-x-auto w-full sm:w-[50%] lg:w-[75%] gap-8 pb-3 xl:pb-0 styled-scrollbar" display='flex'>
                 <Box display='flex' gap={2} alignItems='center' flex='none'>
                     <ExperienceProfessional className="text-sm"/>
@@ -132,7 +239,9 @@ export function Home() {
 
 
             <StyledBox className="py-36">
-                <Box className="w-full lg:w-[48%] xl:w-[42%]">
+                <div
+                    className="w-full lg:w-[48%] xl:w-[42%]">
+
                     <StyledSpan color="#B30C13" fontSize="1.125rem" fontFamily="Myriad Regular">
                     SOBRE NÓS
                     </StyledSpan>
@@ -146,17 +255,21 @@ export function Home() {
                         Conheça a Wirklich
                     </StyledButton>
 
-                </Box>
+                </div>
 
-                <Box className="lg:w-[40%] xl:w-[50%]">
+                <div
+                    className="lg:w-[40%] xl:w-[50%]">
                     <Box className="bg-modal h-[300px] sm:h-[400px] xl:w-[40.625rem] xl:h-[27.188rem] flex justify-center items-center rounded-3xl xl:rounded-none">
                         <YoutubePlayer onClick={handleOpenModal} className="cursor-pointer hover:scale-105 duration-300"/>
                     </Box>
-                </Box>
+                </div>
             </StyledBox>
 
-           <StyledBox className="items-center">
-                <Box className="w-[38%]">
+
+
+          
+           <StyledBox centerRow className="lg:items-center flex-wrap lg:flex-row">
+                <Box className="w-full lg:w-[38%]">
                     <StyledSpan color="#B30C13" fontSize="1.125rem" fontFamily="Myriad Regular">
                         SEGMENTOS
                     </StyledSpan>
@@ -165,24 +278,189 @@ export function Home() {
                     </StyledH2>
                 </Box>
 
-                <Box className="w-[30%]">
+                <Box className="w-full sm:w-[70%] lg:w-[30%]">
                     <StyledP color='#707070' fontFamily="Myriad Regular">
                         Buscamos através da inovação, desenvolver e produzir produtos em polímeros para aplicações diferenciadas.
                     </StyledP>
                 </Box>
 
-                <Box className="w-[22%] justify-end relative" display='flex' gap={1}>
-                    <SlideArrow className="rotate-180 cursor-pointer"/>
-                    <SlideArrow   className="cursor-pointer"/>
+                <Box className="w-full sm:w-[24%] md:w-[26%] lg:w-[22%] sm:justify-end lg:relative flex" gap={1}>
+                    <SlideArrow onClick={slidePrev2} className="rotate-180 cursor-pointer"/>
+                    <SlideArrow onClick={slideNext2} className="cursor-pointer"/>
                 </Box>
             </StyledBox>
+
+            <Box ref={carousel2} className="flex gap-10 overflow-x-auto h-[560px] mt-12 carousel">
+                <Box ref={slide2} className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/946/527/full/Interse%C3%A7%C3%A3o_29.png?1658171048" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-8" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Agro
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-8 w-[98%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                        Substituição de peças de metal por plástico de alta performance, reduzindo consideravelmente o peso das peças.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/946/626/full/Interse%C3%A7%C3%A3o_34.png?1658173137" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-8" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Frigorífico
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-8 w-[98%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                            Produtos de poliuretano termoplástico, resistente à hidrólise, e com uma durabilidade três vezes maior.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/947/193/full/Ret%C3%A2ngulo_893.png?1658225090" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Ferroviário
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-7" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                            Produção de peças para aplicação em ferrovias, para isolamento elétrico da linha e para o amortecimento do sistema.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/947/196/full/Ret%C3%A2ngulo_893.png?1658225280" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Energia solar
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-7 w-[91%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                        A Wirklich está presente no mercado de energia solar através da produção de peças em polímeros utilizados na movimentação e fixação de placas fotovoltaicas.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/947/197/full/Grupo_3335.png?1658225603" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Automotivo
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-7 w-[91%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                        A Wirklich desenvolve produtos direcionados para o mercado automotivo.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/947/203/full/Ret%C3%A2ngulo_893.png?1658226655" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Meio ambiente
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-7 w-[91%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                        A Wirklich vem atuando diretamente em prol do meio ambiente.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link to='/solucoes' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
           
 
             
            
 
-            <StyledBox className="py-36">
-                <Box className="w-full lg:w-[50%] xl:w-[42%] 2xl:w-[38%]">
+            <StyledBox className="py-36" id="tecnologia">
+                <div
+                    className="w-full lg:w-[50%] xl:w-[42%] 2xl:w-[38%]">
                     <StyledH2>
                         Tecnologia de ponta em peças especiais
                     </StyledH2>
@@ -196,9 +474,12 @@ export function Home() {
                         </Box>
 
                     </Box>
-                </Box>
+                </div>
 
-                <Box className="w-full lg:w-[45%] xl:w-[51%] 2xl:w-[51%]">
+        
+                
+                <div
+                    className="w-full lg:w-[45%] xl:w-[51%] 2xl:w-[51%]">
                     <StyledP className="lg:w-[100%] leading-loose" color="#002137" fontFamily="Made Light">
                         Desde seu início, a Wirklich alia os mais sólidos princípios da tradição, com o poder transformador da inovação, para trabalhar ativamente no desenvolvimento e na produção de peças de qualidade em plástico
                     </StyledP>
@@ -218,11 +499,12 @@ export function Home() {
                     <StyledButton to='/empresa'>
                         Conheça a Wirklich
                     </StyledButton>
-                </Box>
+                </div>
+             
 
             </StyledBox>
 
-            <StyledBox>
+            <StyledBox id="inovação">
                 <Box className="w-full lg:w-[40%]">
                     <StyledSpan color="#B30C13" fontSize="1.125rem" fontFamily="Myriad Regular">
                         INOVAÇÃO
@@ -384,7 +666,7 @@ export function Home() {
         </Box>
 
         <Container>
-            <StyledBox center className="pt-52 pb-16">
+            <StyledBox center className="pt-52 pb-16" id="noticias">
                 <Box>
                     <StyledSpan color="#B30C13" fontSize="1.125rem" fontFamily="Myriad Regular">
                         NOTÍCIAS
@@ -400,8 +682,8 @@ export function Home() {
                         Ver outros <StyledSpan fontFamily="Myriad Bold">artigos</StyledSpan>
                     </StyledSpan>
                     <Box className="flex gap-2">
-                        <ArrowSlide onClick={slidePrev} className="cursor-pointer"/>
-                        <ArrowSlide onClick={slideNext} className="rotate-180 cursor-pointer"/>
+                        <ArrowSlide onClick={slidePrev} className="cursor-pointer stroke-[#0089e7]"/>
+                        <ArrowSlide onClick={slideNext} className="rotate-180 cursor-pointer stroke-[#0089e7]"/>
                     </Box>
                 </Box>
             </StyledBox>
@@ -598,7 +880,7 @@ export function Home() {
 
         </Container>
 
-        <FooterBanner />
+        <FooterBanner onClick={scrollToTop}/>
 
         <Footer />
             
@@ -617,6 +899,8 @@ export function Home() {
         </Player>
         </Box>
         </Modal>
+        <ScrollToTop />
+        <WhatsappButton />
         </div>
     )
 }
