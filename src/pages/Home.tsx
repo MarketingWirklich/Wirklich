@@ -868,7 +868,7 @@ export function Home() {
                   </Box>
 
                   <Box className="mb-7">
-                     <StyledButtonForm>
+                     <StyledButtonForm to=''>
                         Cadastrar
                      </StyledButtonForm>
                   </Box>

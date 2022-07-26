@@ -150,7 +150,7 @@ export function Contato() {
                       <StyledP className="mt-5 mb-16 w-[90%]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                         Siga-nos pra ficar por dentro de todas as novidades do mercado do plástico.
                       </StyledP>
-                      <StyledButtonForm form>
+                      <StyledButtonForm form to=''>
                         Siga a Wirklich
                       </StyledButtonForm>
                    </Box> 

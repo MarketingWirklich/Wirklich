@@ -67,7 +67,7 @@ export const MenuContext = ({children}:Props) => {
           }, 100)
 
           setTimeout(() => {
-            history.replaceState(null, null, url)
+            history.replaceState(null, url)
             console.log("Change URL")
           }, 200);
 
@@ -105,7 +105,7 @@ export const MenuContext = ({children}:Props) => {
           }, 100)
 
           setTimeout(() => {
-            history.replaceState(null, null, url)
+            history.replaceState(null, url)
             console.log("Change URL")
           }, 200);
 
@@ -143,7 +143,7 @@ export const MenuContext = ({children}:Props) => {
           }, 100)
 
           setTimeout(() => {
-            history.replaceState(null, null, url)
+            history.replaceState(null, url)
             console.log("Change URL")
           }, 200);
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
-type Props = {
+interface Props {
 
     green?: boolean
     form?: boolean
@@ -36,7 +36,7 @@ export const StyledButton = styled(Link) <Props>`
 
 `
 
-export const StyledButtonForm = styled.button <Props> `
+export const StyledButtonForm = styled(Link) <Props> `
 
     color: #0089E7;
     border: solid #0089E7 1px;
@@ -53,7 +53,7 @@ export const StyledButtonForm = styled.button <Props> `
         color: #FFF;
     }
 
-    ${props => props.form && css`
+    ${props => props.form &&`
     
     background: linear-gradient(90deg, #006cc9, #0074d1, #007bd9, #0083e0, #008be8, #0093f0, #009bf7, #00a3ff);
     color: #FFF;
@@ -61,3 +61,5 @@ export const StyledButtonForm = styled.button <Props> `
     `}
 
 `
+
+

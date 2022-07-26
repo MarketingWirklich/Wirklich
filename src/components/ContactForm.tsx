@@ -110,7 +110,7 @@ export function ContactForm() {
 
             <Box className="flex w-full justify-end">
             <button className='button is-primary' type='submit'>
-                <StyledButtonForm form>
+                <StyledButtonForm form to=''>
                     Enviar
                 </StyledButtonForm>
             </button>
