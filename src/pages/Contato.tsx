@@ -1,5 +1,4 @@
 import { Box, Modal } from "@mui/material";
-import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { FooterBanner } from "../components/FooterBanner";
 import { Navbar } from "../components/Navbar";
@@ -17,7 +16,7 @@ import SmartphoneWithBg from '../Static/svg/SmartphoneWithBg'
 import EmailIcon from '../Static/svg/EmailIcon'
 
 import Save from '../Static/svg/Save'
-import Pin from "../Static/svg/Pin";
+import Pin from "../static/svg/Pin";
 
 import FacebookIcon from '../Static/svg/FacebookIcon'
 import InstagramIcon from '../Static/svg/InstagramIcon'
