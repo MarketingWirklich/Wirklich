@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import WirklichLogo from "../Static/svg/WirklichLogo";
+import WirklichLogo from "../static/svg/WirklichLogo";
 import { Container } from "../styled-components/Container";
 import { StyledLink, StyledLinkMenu } from "../styled-components/StyledLink";
 
@@ -9,12 +9,12 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { BsYoutube } from 'react-icons/bs'
 import { useDrawerContext } from "../Contexts/MainContext";
 import { StyledSpan } from "../styled-components/StyledSpan";
-import Pin from "../Static/svg/Pin";
-import Smartphone from "../Static/svg/Smartphone";
-import WhatsappIcon from "../Static/svg/WhatsappIcon";
-import MailIcon from "../Static/svg/MailIcon";
-import ArrowScrollToTop from "../Static/svg/ArrowScrollToTop";
-import EaglesLogo from "../Static/svg/EaglesLogo";
+import Pin from "../static/svg/Pin";
+import Smartphone from "../static/svg/Smartphone";
+import WhatsappIcon from "../static/svg/WhatsappIcon";
+import MailIcon from "../static/svg/MailIcon";
+import ArrowScrollToTop from "../static/svg/ArrowScrollToTop";
+import EaglesLogo from "../static/svg/EaglesLogo";
 
 export function Footer() {
 
@@ -61,7 +61,7 @@ export function Footer() {
 
                             <Link onClick={moveToInovation} to="/">
                                 <StyledLink>
-                                Terceirização
+                                Terceirizaçãs
                                 </StyledLink>
                             </Link>
 

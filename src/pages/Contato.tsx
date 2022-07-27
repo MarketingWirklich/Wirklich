@@ -11,20 +11,19 @@ import { StyledH1, StyledH2, StyledH3 } from "../styled-components/StyledH1";
 import { StyledP } from "../styled-components/StyledP";
 import { StyledSpan } from "../styled-components/StyledSpan";
 
-import Techpark from "../Static/svg/Techpark";
+import Techpark from "../static/svg/Techpark";
 
-import SmartphoneWithBg from '../Static/svg/SmartphoneWithBg'
-import EmailIcon from '../Static/svg/EmailIcon'
+import SmartphoneWithBg from '../static/svg/SmartphoneWithBg'
+import EmailIcon from '../static/svg/EmailIcon'
 
-import Save from '../Static/svg/Save'
-import Heart from '../Static/svg/Heart'
-import Pin from "../Static/svg/Pin";
+import Save from '../static/svg/Save'
+import Pin from "../static/svg/Pin";
 
-import FacebookIcon from '../Static/svg/FacebookIcon'
-import InstagramIcon from '../Static/svg/InstagramIcon'
-import LinkedinIcon from '../Static/svg/LinkedinIcon'
-import YoutubeIcon from '../Static/svg/YoutubeIcon'
-import RocketWhite from '../Static/svg/RocketWhite'
+import FacebookIcon from '../static/svg/FacebookIcon'
+import InstagramIcon from '../static/svg/InstagramIcon'
+import LinkedinIcon from '../static/svg/LinkedinIcon'
+import YoutubeIcon from '../static/svg/YoutubeIcon'
+import RocketWhite from '../static/svg/RocketWhite'
 import { ContactForm } from "../components/ContactForm";
 import { StyledButtonForm } from "../styled-components/StyledButton";
 

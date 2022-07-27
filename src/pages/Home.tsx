@@ -18,21 +18,21 @@ import { Player, DefaultUi, Youtube } from '@vime/react';
 import '@vime/core/themes/default.css';
 
 {/* Import de SVG's */}
-import ExperienceProfessional from "../Static/svg/ExperienceProfessional";
-import QualityPrecision from "../Static/svg/QualityPrecision";
-import Solutions from "../Static/svg/Solutions";
-import LightBulb from "../Static/svg/LightBulb";
-import WeightReduce from "../Static/svg/WeightReduce";
-import HighResistence from "../Static/svg/HighResistence";
-import MoreDurability from "../Static/svg/MoreDurability";
-import ImpactResistence from "../Static/svg/ImpactResistence";
-import Material from "../Static/svg/Material";
-import Leaf from "../Static/svg/Leaf";
-import Check from "../Static/svg/Check";
-import LongArrow from "../Static/svg/LongArrow";
-import ArrowSlide from "../Static/svg/ArrowSlide";
-import YoutubePlayer from "../Static/svg/YoutubePlayer";
-import SlideArrow from "../Static/svg/SlideArrow";
+import ExperienceProfessional from "../static/svg/ExperienceProfessional";
+import QualityPrecision from "../static/svg/QualityPrecision";
+import Solutions from "../static/svg/Solutions";
+import LightBulb from "../static/svg/LightBulb";
+import WeightReduce from "../static/svg/WeightReduce";
+import HighResistence from "../static/svg/HighResistence";
+import MoreDurability from "../static/svg/MoreDurability";
+import ImpactResistence from "../static/svg/ImpactResistence";
+import Material from "../static/svg/Material";
+import Leaf from "../static/svg/Leaf";
+import Check from "../static/svg/Check";
+import LongArrow from "../static/svg/LongArrow";
+import ArrowSlide from "../static/svg/ArrowSlide";
+import YoutubePlayer from "../static/svg/YoutubePlayer";
+import SlideArrow from "../static/svg/SlideArrow";
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
 
@@ -49,7 +49,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import { WhatsappButton } from "../components/WhatsappButton";
 import { useDrawerContext } from "../Contexts/MainContext";
 
-const baseImageUrlHome = "../../public/static/img/page_home/"
+const baseImageUrlHome = "../static/img/page_home/"
 
 export function Home() {
 

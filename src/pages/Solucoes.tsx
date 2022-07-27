@@ -11,12 +11,12 @@ import { StyledH1, StyledH2 } from "../styled-components/StyledH1";
 import { StyledP } from "../styled-components/StyledP";
 import { StyledSpan } from "../styled-components/StyledSpan";
 
-import Weight from '../Static/svg/Weight'
-import Resistence from '../Static/svg/Resistence'
-import Durability from '../Static/svg/Durability'
-import Eco from '../Static/svg/Eco'
-import Quimics from '../Static/svg/Quimics'
-import Inovation from '../Static/svg/Inovation'
+import Weight from '../static/svg/Weight'
+import Resistence from '../static/svg/Resistence'
+import Durability from '../static/svg/Durability'
+import Eco from '../static/svg/Eco'
+import Quimics from '../static/svg/Quimics'
+import Inovation from '../static/svg/Inovation'
 import { useDrawerContext } from "../Contexts/MainContext";
 
 export function Solucoes() {
