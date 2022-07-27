@@ -12,17 +12,17 @@ import { StyledSpan } from "../styled-components/StyledSpan";
 
 import { DefaultUi, Player, Youtube } from "@vime/react";
 
-import PeD from "../static/svg/P&D";
-import Airplane from "../static/svg/Airplane";
-import CheckInBox from "../static/svg/CheckInBox";
-import Rocket from "../static/svg/Rocket";
-import Quotes from "../static/svg/Quotes";
-import Techpark from "../static/svg/Techpark";
-import LinesBlue from "../static/svg/LinesBlue";
-import LinesGreen from "../static/svg/LinesGreen";
-import LeafSquareLittle from "../static/svg/LeafSquareLittle";
-import Solar from "../static/svg/Solar";
-import Energy from "../static/svg/Energy";
+import PeD from "../Static/svg/P&D";
+import Airplane from "../Static/svg/Airplane";
+import CheckInBox from "../Static/svg/CheckInBox";
+import Rocket from "../Static/svg/Rocket";
+import Quotes from "../Static/svg/Quotes";
+import Techpark from "../Static/svg/Techpark";
+import LinesBlue from "../Static/svg/LinesBlue";
+import LinesGreen from "../Static/svg/LinesGreen";
+import LeafSquareLittle from "../Static/svg/LeafSquareLittle";
+import Solar from "../Static/svg/Solar";
+import Energy from "../Static/svg/Energy";
 
 import { BsArrowRightShort } from 'react-icons/bs'
 

@@ -8,13 +8,13 @@ import { StyledSpan } from "../styled-components/StyledSpan";
 import { AiOutlineInstagram } from 'react-icons/ai'
 
 import { BsArrowReturnLeft } from 'react-icons/bs'
-import LeafSquareLittle from "../static/svg/LeafSquareLittle";
-import Solar from "../static/svg/Solar";
-import Energy from "../static/svg/Energy";
-import Expansive from '../static/svg/Expansive'
-import Manutencion from '../static/svg/Manutencion'
-import Money from '../static/svg/Money'
-import Check from '../static/svg/Check'
+import LeafSquareLittle from "../Static/svg/LeafSquareLittle";
+import Solar from "../Static/svg/Solar";
+import Energy from "../Static/svg/Energy";
+import Expansive from '../Static/svg/Expansive'
+import Manutencion from '../Static/svg/Manutencion'
+import Money from '../Static/svg/Money'
+import Check from '../Static/svg/Check'
 import { Footer } from "../components/Footer";
 
 const baseImageUrl = "../static/img/page_contato/"

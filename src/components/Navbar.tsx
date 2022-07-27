@@ -6,7 +6,7 @@ import { StyledLink, StyledLinkMenu } from "../styled-components/StyledLink";
 
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
-import WirklichLogo from "../static/svg/WirklichLogo";
+import WirklichLogo from "../Static/svg/WirklichLogo";
 import { useDrawerContext } from "../Contexts/MainContext";
 
 export function Navbar() {
