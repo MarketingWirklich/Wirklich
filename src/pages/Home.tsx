@@ -301,7 +301,7 @@ export function Home() {
 
                 <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
-                        <img src="https://uploaddeimagens.com.br/images/003/946/626/full/Interse%C3%A7%C3%A3o_34.png?1658173137" alt="" />
+                        <img src={`${baseImageUrlHome}frigorifico.png`} alt="" />
                     </Box>
                     <Box className="mt-8 h-[15px]">
                         <StyledSpan className="px-8" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
