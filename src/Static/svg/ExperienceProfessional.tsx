@@ -1,13 +1,13 @@
 import * as React from "react"
 
-const ExperienceProfessional = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={43.679}
     height={43.07}
     {...props}
   >
-    <g data-name="Grupo 956" fill="#00a3ff">
+    <g data-name="Grupo 956" fill="#b30c13">
       <path
         data-name="Caminho 611"
         d="M22.019 23.824a3.339 3.339 0 1 1 3.339-3.339 3.343 3.343 0 0 1-3.339 3.339Zm0-5.414a2.076 2.076 0 1 0 2.076 2.076 2.078 2.078 0 0 0-2.076-2.076Z"
@@ -124,4 +124,4 @@ const ExperienceProfessional = (props: JSX.IntrinsicAttributes & React.SVGProps<
   </svg>
 )
 
-export default ExperienceProfessional
+export default SvgComponent

@@ -50,7 +50,7 @@ export function Navbar() {
 
                             <Link onClick={moveToInovation} to="/">
                                 <StyledLink>
-                                Inovação
+                                Terceirização
                                 </StyledLink>
                             </Link>
 
@@ -100,7 +100,7 @@ export function Navbar() {
                                 </StyledLinkMenu>
                             </Link>
 
-                            <Link className={`duration-700 delay-[860ms] ${isMenuOpen? 'translate-y-3 opacity-100' : 'translate-y-0 opacity-0'}`} to="/#meio-ambiente">
+                            <Link className={`duration-700 delay-[860ms] ${isMenuOpen? 'translate-y-3 opacity-100' : 'translate-y-0 opacity-0'}`} to="/meio-ambiente">
                                 <StyledLinkMenu onClick={handleMenuClick}>
                                 Meio Ambiente
                                 </StyledLinkMenu>
@@ -108,7 +108,7 @@ export function Navbar() {
 
                             <Link className={`duration-700 delay-[910ms] ${isMenuOpen? 'translate-y-3 opacity-100' : 'translate-y-0 opacity-0'}`} to="/#inovacao">
                                 <StyledLinkMenu onClick={moveToInovation}>
-                                Inovação
+                                Terceirização
                                 </StyledLinkMenu>
                             </Link>
 

@@ -1,9 +1,18 @@
-import { Typography, Box, Modal } from "@mui/material";
-import { BackgroundHeader } from "../components/BackgroundHeader";
+import { useRef, useState } from "react";
+
+import { Box, Modal } from "@mui/material";
 import { Navbar } from "../components/Navbar";
 import { Container } from "../styled-components/Container";
 import { StyledH1, StyledH2, StyledH3 } from "../styled-components/StyledH1";
 import { StyledP } from "../styled-components/StyledP";
+import { StyledSpan } from "../styled-components/StyledSpan";
+import { StyledButton, StyledButtonForm } from "../styled-components/StyledButton";
+import { StyledBox } from "../styled-components/StyledBox";
+import { Link } from "react-router-dom";
+import { StyledInput } from "../styled-components/StyledInput";
+import { FooterBanner } from "../components/FooterBanner";
+import { Footer } from "../components/Footer";
+import { ScrollToTop } from "../components/ScrollToTop";
  
 import { Player, DefaultUi, Youtube } from '@vime/react';
 import '@vime/core/themes/default.css';
@@ -20,24 +29,11 @@ import Leaf from "../Static/svg/Leaf";
 import Check from "../Static/svg/Check";
 import LongArrow from "../Static/svg/LongArrow";
 import ArrowSlide from "../Static/svg/ArrowSlide";
-import { StyledSpan } from "../styled-components/StyledSpan";
-import { StyledButton, StyledButtonForm } from "../styled-components/StyledButton";
-import { StyledBox } from "../styled-components/StyledBox";
 import YoutubePlayer from "../Static/svg/YoutubePlayer";
-import { useEffect, useRef, useState } from "react";
 import SlideArrow from "../Static/svg/SlideArrow";
-import { Link, useNavigate } from "react-router-dom";
-
-import { AiOutlineArrowRight, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
-import { StyledInput } from "../styled-components/StyledInput";
-import { FooterBanner } from "../components/FooterBanner";
-import { Footer } from "../components/Footer";
-import { ScrollToTop } from "../components/ScrollToTop";
 
-import { motion, useAnimation } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,15 +41,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import { Autoplay, Navigation } from "swiper";
+import "swiper/css/pagination";
+
+import { Autoplay, Navigation, Pagination } from "swiper";
 import { WhatsappButton } from "../components/WhatsappButton";
 import { useDrawerContext } from "../Contexts/MainContext";
 
+const baseImageUrlHome = "../../public/static/img/page_home/"
 
 export function Home() {
 
     
-    const {scrollToTop} = useDrawerContext()
+    const {
+        scrollToTop, 
+        moveToAgro,
+        moveToFerroviario,
+        moveToAutomotivo,
+        moveToFrigorifico,
+        moveToMeioAmbiente,
+        moveToEnergiaSolar,
+        moveToServicoDeTerceirizacao
+    
+    } = useDrawerContext()
 
     const [modalOpen, setModalOpen] = useState(false)
     const handleOpenModal = () => setModalOpen(true);
@@ -88,60 +97,7 @@ export function Home() {
         carousel2.current.scrollLeft += slide2.current.offsetWidth + margin
     }
 
-    const control = useAnimation()
-    const control2 = useAnimation()
-    const control3 = useAnimation()
-    const [ref, inView] = useInView()
 
-    const [ref2, inView2] = useInView()
-    const [ref3, inView3] = useInView()
-
-    const leftAnima = {
-        visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
-        hidden: { opacity: 0, x: -500 }
-      };
-
-      const rightAnima = {
-        visible: { opacity: 1, x: 0, transition: { duration: 1.5 } },
-        hidden: { opacity: 0, x: 500 }
-      };
-
-      const downAnima = {
-        visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
-        hidden: { opacity: 0, y: 500 }
-      };
-
-      const scaleAnima = {
-        visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-        hidden: { opacity: 0, scale: 0 }
-      };
-
-
-
-
-      useEffect(() => {
-        if (inView) {
-          control.start("visible");
-        } else {
-          control.start("hidden");
-        }
-      }, [control, inView]);
-
-      useEffect(() => {
-        if (inView2) {
-          control2.start("visible");
-        } else {
-          control2.start("hidden");
-        }
-      }, [control2, inView2]);
-
-      useEffect(() => {
-        if (inView3) {
-          control3.start("visible");
-        } else {
-          control3.start("hidden");
-        }
-      }, [control3, inView3]);
 
    
 
@@ -156,14 +112,15 @@ export function Home() {
             delay: 2500,
             disableOnInteraction: true,
           }}
+        pagination={true}
           
-        modules={[Navigation, Autoplay]} className="mySwiper">
+        modules={[Navigation, Autoplay, Pagination]} className="mySwiper">
         <SwiperSlide className="w-full slide-1 h-[550px] sm:h-[700px]">
             <Container className="h-full">
                 <Box className="flex flex-col justify-center h-full">
                 <Box className="lg:w-[55%] xl:w-[45%] mb-10">
                     <StyledH1>
-                        Qualidade e precisão na injeção de polímeros de engenharia
+                        Soluções tecnológicas e sustentáveis em polímeros de engenharia
                     </StyledH1>
                 </Box>
 
@@ -176,14 +133,38 @@ export function Home() {
             </Container>
         </SwiperSlide>
         <SwiperSlide className="w-full slide-2 h-[550px] sm:h-[700px]">
-
-        </SwiperSlide>
-        <SwiperSlide className="w-full slide-3 h-[550px] sm:h-[700px]">
-        <Box className="lg:w-[55%] xl:w-[50%] mb-10">
+        <Container className="h-full">
+                <Box className="flex flex-col justify-center h-full">
+                <Box className="lg:w-[55%] xl:w-[65%] mb-10">
                     <StyledH1>
-                        Tecnologia de ponta na transformação de pecas metálicas em pecas de polímeros de alta performance
+                        Tecnologia de ponta na transformação de peças metálicas em peças de polímeros
                     </StyledH1>
                 </Box>
+
+                <Box className="lg:w-[44%]">
+                    <StyledP color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
+                        A Wirklich é movida pelo desafio de encontrar <StyledSpan fontFamily="Myriad Bold">soluções criativas</StyledSpan> e eficientes para substituir a aplicação de materiais, como o metal e a borracha, pelo plástico.
+                    </StyledP>
+                </Box>
+                </Box>
+            </Container>
+        </SwiperSlide>
+        <SwiperSlide className="w-full slide-3 h-[550px] sm:h-[700px]">
+        <Container className="h-full">
+                <Box className="flex flex-col justify-center h-full">
+                <Box className="lg:w-[55%] xl:w-[65%] mb-10">
+                    <StyledH1>
+                        Qualidade e precisão na injeção de polímeros de engenharia
+                    </StyledH1>
+                </Box>
+
+                <Box className="lg:w-[44%]">
+                    <StyledP color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
+                        A Wirklich é movida pelo desafio de encontrar <StyledSpan fontFamily="Myriad Bold">soluções criativas</StyledSpan> e eficientes para substituir a aplicação de materiais, como o metal e a borracha, pelo plástico.
+                    </StyledP>
+                </Box>
+                </Box>
+            </Container>
         </SwiperSlide>
       </Swiper>
         <Container>
@@ -230,7 +211,7 @@ export function Home() {
              </Box>
 
              <Box className="mt-10 sm:mt-0">
-                <StyledButton to='/contato'>
+                <StyledButton onClick={scrollToTop} to='/contato'>
                     Entrar em contato
                 </StyledButton>
              </Box>
@@ -251,7 +232,7 @@ export function Home() {
                     <StyledP className="mb-8" color="#707070" fontFamily="Myriad Regular">
                     A Wirklich iniciou a sua trajetória de sucesso no ano de <strong className="text-black">2005</strong>, para atender um mercado exigente, que se ressentia da falta de empresas preparadas para desenvolver e processar <strong className="text-black">produtos injetados</strong> em polímeros com engenharia de alta e ultra performance.
                     </StyledP>
-                    <StyledButton to='/empresa'>
+                    <StyledButton onClick={scrollToTop} to='/empresa'>
                         Conheça a Wirklich
                     </StyledButton>
 
@@ -307,7 +288,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToAgro} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -334,7 +315,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToFrigorifico} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -361,7 +342,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToFerroviario} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -388,7 +369,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToEnergiaSolar} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -415,7 +396,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToAutomotivo} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -442,7 +423,7 @@ export function Home() {
                     </Box>
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link to='/solucoes' className="group">
+                        <Link onClick={moveToMeioAmbiente} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -479,7 +460,7 @@ export function Home() {
         
                 
                 <div
-                    className="w-full lg:w-[45%] xl:w-[51%] 2xl:w-[51%]">
+                    className="w-full lg:w-[40%] xl:w-[43%] 2xl:w-[46%]">
                     <StyledP className="lg:w-[100%] leading-loose" color="#002137" fontFamily="Made Light">
                         Desde seu início, a Wirklich alia os mais sólidos princípios da tradição, com o poder transformador da inovação, para trabalhar ativamente no desenvolvimento e na produção de peças de qualidade em plástico
                     </StyledP>
@@ -488,17 +469,11 @@ export function Home() {
                         Atuando no mercado de <StyledSpan color="#002137" fontFamily="Myriad Bold">peças técnicas injetadas</StyledSpan>, o grande desafio da empresa é desenvolver soluções criativas e eficientes para substituir a aplicação de materiais, como o metal e a borracha, pelo plástico, proporcionando diversas vantagens, principalmente no que diz respeito à redução de peso e de custos das peças.
                     </StyledP>
 
-                    <StyledH3 className="mt-8">
-                        Serviço de terceirização
-                    </StyledH3>
-
-                    <StyledP className="mb-12" color="#707070" fontFamily="Myriad Regular">
-                        Oferecemos o serviço exclusivo de <StyledSpan color="#002137" fontFamily="Myriad Bold">terceirização de mão de obra</StyledSpan>, com máquinas e equipamentos de altíssima qualidade à disposição de nossos clientes.
-                    </StyledP>
-
-                    <StyledButton to='/empresa'>
+                    <Box className="mt-10">
+                    <StyledButton onClick={scrollToTop} to='/empresa'>
                         Conheça a Wirklich
                     </StyledButton>
+                    </Box>
                 </div>
              
 
@@ -507,22 +482,22 @@ export function Home() {
             <StyledBox id="inovação">
                 <Box className="w-full lg:w-[40%]">
                     <StyledSpan color="#B30C13" fontSize="1.125rem" fontFamily="Myriad Regular">
-                        INOVAÇÃO
+                        TERCEIRIZAÇÃO
                     </StyledSpan>
 
                     <StyledH2 className="w-[90%]">
-                        O novo caminho da inovação
+                        Serviço de terceirização
                     </StyledH2>
 
                     <StyledP className="mb-8 mt-8" color="#707070" fontFamily="Myriad Regular">
-                    Movidos pelo desafio de desenvolver soluções sustentáveis e tecnológicas, temos o <StyledSpan color="#002137" fontFamily="Myriad Bold">poder da inovação</StyledSpan>, somos reconhecidos principalmente pelo mercado ferroviário, por desenvolver produtos em <StyledSpan color="#002137" fontFamily="Myriad Bold">polímero</StyledSpan> para substituir a aplicação de outros materiais.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quo, recusandae sequi hic voluptas vero, fuga nulla doloribus provident nihil modi sed necessitatibus ducimus expedita harum ipsum placeat asperiores veniam.
                     </StyledP>
 
                     <StyledP className="mb-7" color="#707070" fontFamily="Myriad Regular">
-                    Para inovar cada vez mais, a empresa está sempre em busca de novos campos de aplicação para o <StyledSpan color="#002137" fontFamily="Myriad Bold">plástico</StyledSpan>, contando com Know-how diferenciado e foco permanente nas necessidades de cada cliente.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellendus voluptas laboriosam neque quo ullam tempore animi quisquam eaque, nihil nam architecto accusamus hic eum ipsam libero. Quo, ut neque!
                     </StyledP>
 
-                    <StyledButton to='/contato'>
+                    <StyledButton onClick={scrollToTop} to='/contato'>
                         Entrar em contato
                     </StyledButton>
                 </Box>
@@ -543,7 +518,7 @@ export function Home() {
 
         </Container>
 
-        <Box className="py-16 mt-36 bg-[#002137]">
+        <Box className="py-16 mt-36 bg-connections">
             <Container>
                 <StyledBox center>
                     <Box>
@@ -616,7 +591,7 @@ export function Home() {
                     </StyledH2>
 
                     <Box className="relative"> 
-                        <img src="https://uploaddeimagens.com.br/images/003/938/548/full/Grupo_1152.png?1657635683" alt="" />
+                        <img src={`${baseImageUrlHome}wirklich-filtro-verde.png`} alt="" />
                         <Box className="absolute sm:top-20 bg-white rounded-lg w-[260px] h-[70px] flex items-center justify-center shadow-lg right-2/4 translate-x-2/4 sm:translate-x-0 -bottom-10 sm:bottom-0 sm:right-36 lg:-right-4">
                         <Leaf/>
                         </Box>
@@ -657,7 +632,7 @@ export function Home() {
                         </Box>
                     </Box> 
 
-                    <StyledButton green to="/meio-ambiente">
+                    <StyledButton onClick={scrollToTop} green to="/meio-ambiente">
                         Conheça a tecnologia Werde
                     </StyledButton>
                 </Box>

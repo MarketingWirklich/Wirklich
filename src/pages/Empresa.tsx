@@ -99,7 +99,7 @@ export function Empresa() {
                         Nossos <StyledSpan color="#000" fontFamily="Myriad Bold">diferenciais</StyledSpan> competitivos em frente ao mercado
                     </StyledSpan>
 
-                    <StyledButton to='/contato'>
+                    <StyledButton  onClick={scrollToTop} to='/contato'>
                         Entre em contato
                     </StyledButton>
                 </StyledBox>

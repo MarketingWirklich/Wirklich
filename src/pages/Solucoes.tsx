@@ -146,7 +146,7 @@ export function Solucoes() {
                     </Box>
                 </StyledBox>
 
-                <StyledBox center className="mt-32">
+                <StyledBox id="segmentos" center className="mt-32">
                     <Box className="w-full lg:w-[40%] xl:w-[43%]">
                         <Box className="flex overflow-x-auto pb-6 lg:pb-0 styled-scrollbar lg:flex-col gap-5 sm:gap-10 lg:gap-[140px]">
                             <Box className="flex-none w-[85%] md:w-auto lg:flex-auto">
@@ -165,8 +165,8 @@ export function Solucoes() {
 
                     <Box className="w-full lg:w-[50%] xl:w-[42%]">
                         <Box className="flex overflow-x-auto pb-6 lg:pb-0 styled-scrollbar lg:flex-col gap-10 lg:gap-[40px] xl:gap-[60px]">
-                            <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:w-auto lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                            <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:w-auto lg:flex-auto">
+                                <StyledSpan id="ferroviario" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Ferroviário
                                 </StyledSpan>
 
@@ -176,7 +176,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="automotivo" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Automotivo
                                 </StyledSpan>
 
@@ -186,7 +186,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="frigorifico" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Frigorifico
                                 </StyledSpan>
 
@@ -196,7 +196,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="agro" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Agro
                                 </StyledSpan>
 
@@ -206,7 +206,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="meio-ambiente" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Meio Ambiente
                                 </StyledSpan>
 
@@ -216,7 +216,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="energia-solar" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Energia Solar
                                 </StyledSpan>
 
@@ -226,7 +226,7 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan color="#002137" fontFamily="Made Light" fontSize="1.375rem">
+                                <StyledSpan id="servico-de-terceirizacao" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Serviço de terceirização
                                 </StyledSpan>
 

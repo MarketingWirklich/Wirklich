@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Contato } from "../pages/Contato";
 import { Empresa } from "../pages/Empresa";
 import { Home } from "../pages/Home";
+import { Instagram } from "../pages/Instagram";
 import { MeioAmbiente } from "../pages/MeioAmbiente";
 import { Solucoes } from "../pages/Solucoes";
 
@@ -14,6 +15,10 @@ export function Router() {
             <Route path="/solu%C3%A7%C3%B5es" element={<Solucoes />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/meio-ambiente" element={<MeioAmbiente />} />
+
+
+
+            <Route path="/instagram" element={<Instagram />} />
         </Routes>
     )
 }
