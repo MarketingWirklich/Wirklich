@@ -9,7 +9,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import { BsYoutube } from 'react-icons/bs'
 import { useDrawerContext } from "../Contexts/MainContext";
 import { StyledSpan } from "../styled-components/StyledSpan";
-import Pin from "../static/svg/Pin";
+import Pin from '../static/svg/Pin'
 import Smartphone from "../static/svg/Smartphone";
 import WhatsappIcon from "../static/svg/WhatsappIcon";
 import MailIcon from "../static/svg/MailIcon";
