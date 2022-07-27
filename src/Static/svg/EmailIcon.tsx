@@ -2,17 +2,17 @@ import * as React from "react"
 
 const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={43.4} height={43.4} {...props}>
-    <g data-name="Grupo 3236" transform="translate(-290 -654.037)">
+    <g data-name="Grupo 3345" transform="translate(-641 -654.037)">
       <rect
-        data-name="Ret\xE2ngulo 818"
+        data-name="Ret\xE2ngulo 877"
         width={43.4}
         height={43.4}
         rx={5}
-        transform="translate(290 654.037)"
+        transform="translate(641 654.037)"
         fill="rgba(196,38,35,0.13)"
       />
       <g
-        data-name="Grupo 3234"
+        data-name="Grupo 3235"
         fill="none"
         stroke="#c42623"
         strokeLinecap="round"
@@ -20,10 +20,13 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         strokeWidth={2}
       >
         <path
-          data-name="Caminho 693"
-          d="M305.767 663.869h11.868a2.374 2.374 0 0 1 2.374 2.374v18.989a2.374 2.374 0 0 1-2.374 2.374h-11.868a2.374 2.374 0 0 1-2.374-2.374v-18.989a2.374 2.374 0 0 1 2.374-2.374Z"
+          data-name="Caminho 2167"
+          d="M653.936 666.973h17.527a2.2 2.2 0 0 1 2.191 2.191v13.145a2.2 2.2 0 0 1-2.191 2.191h-17.527a2.2 2.2 0 0 1-2.191-2.191v-13.145a2.2 2.2 0 0 1 2.191-2.191Z"
         />
-        <path data-name="Caminho 694" d="M311.701 682.858h0" />
+        <path
+          data-name="Caminho 2168"
+          d="m673.654 669.164-10.955 7.668-10.954-7.668"
+        />
       </g>
     </g>
   </svg>

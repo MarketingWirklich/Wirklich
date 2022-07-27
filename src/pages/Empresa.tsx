@@ -36,6 +36,8 @@ export function Empresa() {
 
     const {scrollToTop} = useDrawerContext()
 
+    const baseImageUrlEmpresa = "../../public/static/img/page_empresa/"
+
 
     return (
         <>
@@ -233,7 +235,7 @@ export function Empresa() {
             <Container>
                 <StyledBox center>
                     <Box className="relative lg:w-[45%]">
-                        <img src="https://uploaddeimagens.com.br/images/003/947/442/full/Grupo_3335.png?1658239819" alt="" />
+                        <img src={`${baseImageUrlEmpresa}empresa-demarcada.png`} alt="" />
                         <Box className="bg-white flex flex-wrap gap-3 sm:block w-[200px] sm:w-auto xl:w-[180px] sm:h-[120px] absolute card-shadow -bottom-16 right-5 sm:bottom-6 sm:right-6 xl:bottom-10 xl:right-10 rounded-md p-4 sm:p-5">
                             <Box>
                                 <Techpark />
@@ -332,9 +334,9 @@ export function Empresa() {
                     </Box>
 
                     <Box className="lg:w-[45%] xl:w-[41%] mt-10 md:mt-0">
-                        <Box className="w-[100%] md:w-[500px] lg:w-[460px] xl:w-[510px] 2xl:w-[570px] h-[180px] md:h-[300px] lg:h-[328px] bg-[#038a1531] rounded-[10px] relative">
-                            <img className="absolute w-[80%] sm:w-[90%] lg:w-[90%] xl:w-full left-2/4 -translate-x-2/4 -bottom-12" src="https://uploaddeimagens.com.br/images/003/947/669/full/Interse%C3%A7%C3%A3o_9.png?1658246913" alt="" />
-                            <img className="absolute -bottom-8 lg:-left-16" src="https://uploaddeimagens.com.br/images/003/947/673/full/Grupo_3180.png?1658247050" alt="" />
+                        <Box className="w-[100%] md:w-[500px] lg:w-[460px] xl:w-[510px] 2xl:w-[570px] h-[250px] md:h-[300px] lg:h-[330px] md:bg-[#038a1531] rounded-[10px] relative">
+                            <img className="absolute md:w-[80%] sm:w-[90%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] md:left-2/4 md:-translate-x-2/4 md:-bottom-8 2xl:-bottom-10" src="https://uploaddeimagens.com.br/images/003/947/669/full/Interse%C3%A7%C3%A3o_9.png?1658246913" alt="" />
+                            <img className="absolute -bottom-0 lg:-left-16" src="https://uploaddeimagens.com.br/images/003/947/673/full/Grupo_3180.png?1658247050" alt="" />
                         </Box> 
 
                         <Box className="mt-20">

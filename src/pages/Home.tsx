@@ -25,6 +25,8 @@ import LightBulb from "../Static/svg/LightBulb";
 import WeightReduce from "../Static/svg/WeightReduce";
 import HighResistence from "../Static/svg/HighResistence";
 import MoreDurability from "../Static/svg/MoreDurability";
+import ImpactResistence from "../Static/svg/ImpactResistence";
+import Material from "../Static/svg/Material";
 import Leaf from "../Static/svg/Leaf";
 import Check from "../Static/svg/Check";
 import LongArrow from "../Static/svg/LongArrow";
@@ -446,14 +448,9 @@ export function Home() {
                         Tecnologia de ponta em peças especiais
                     </StyledH2>
                     <Box className="mt-10">
-                        <Box className="flex justify-between md:w-[70%] lg:w-full">
-                        <img src="https://uploaddeimagens.com.br/images/003/938/357/full/foto_das_maquinas.png?1657628151" alt="" />
-                        <Box className="relative">
-                        <img className="w-[140px] max-w-[140px] sm:w-[180px] sm:max-w-[180px] h-[160px] sm:h-[261px] absolute sm:static right-0 -top-5" src="https://uploaddeimagens.com.br/images/003/938/358/full/foto_das_maquinas2.png?1657628173" alt="" />
-                        <img className="absolute w-[250px] max-w-[250px] right-0 bottom-6" src="https://uploaddeimagens.com.br/images/003/938/361/full/tecnologia.png?1657628259" alt="" />
+                        <Box className="flex justify-center items-center w-full h-[350px] border border-gray-300 bg-blue-100 rounded-xl">
+                           VÍDEO DO ROBÔ
                         </Box>
-                        </Box>
-
                     </Box>
                 </div>
 
@@ -503,10 +500,9 @@ export function Home() {
                 </Box>
 
                 <Box className="w-full lg:w-[45%] block md:flex lg:block md:justify-between">
-                    <Box className="relative md:w-[50%] lg:w-full">
-                    <img src="https://uploaddeimagens.com.br/images/003/938/359/full/novo_caminho_da_inovacao.png?1657628211" alt="" />
-                    <img className="absolute right-0 2xl:right-7 bottom-0" src="https://uploaddeimagens.com.br/images/003/938/395/full/stars.png?1657629827" alt="" />
-                    </Box>
+                        <Box className="flex justify-center items-center w-full md:w-[50%] lg:w-full h-[350px] border border-gray-300 bg-blue-100 rounded-xl">
+                           GIF DO GUINDASTE
+                        </Box>
                     <Box className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:items-center mt-12 w-full lg:justify-between md:w-[40%] lg:w-full">
                         <LightBulb className="sm:w-[25%] lg:w-[30%] xl:w-[20%]"/>
                         <StyledP color="#707070" fontFamily="Myriad Regular">
@@ -539,38 +535,38 @@ export function Home() {
                 </StyledBox>
 
                 <Box className="flex sm:flex-wrap overflow-x-auto styled-scrollbar pb-10 sm:pb-0 sm:justify-center gap-5 lg:gap-7 2xl:gap-5 mt-16">
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] 2xl:px-[60px] py-6 rounded-xl">
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
                         <WeightReduce />
-                        <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Redução de peso
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] 2xl:px-[60px] py-6 rounded-xl">
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
                         <HighResistence />
-                        <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Alta resistência
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] 2xl:px-[60px] py-6 rounded-xl">
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
                         <MoreDurability />
-                        <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Maior durabilidade
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] 2xl:px-[60px] py-6 rounded-xl">
-                        <WeightReduce />
-                        <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
-                            Redução de peso
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
+                        <ImpactResistence />
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                            Resistência a impacto
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] 2xl:px-[60px] py-6 rounded-xl">
-                        <WeightReduce />
-                        <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
-                            Redução de peso
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
+                        <Material />
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                            Materiais recicláveis
                         </StyledSpan>
                     </Box>
                 </Box>

@@ -10,7 +10,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
           height={54}
           rx={5}
           transform="translate(1025 1626)"
-          fill="rgba(0,163,255,0.13)"
+          fill="rgba(196,38,35,0.13)"
         />
         <g
           data-name="Grupo 1208"
@@ -24,7 +24,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
             height={26.414}
             rx={2}
             transform="translate(6.677 6.677)"
-            stroke="#00a3ff"
+            stroke="#c42623"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
@@ -32,7 +32,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
           <path
             data-name="Caminho 2215"
             d="m14.825 19.766 3.294 3.294 6.589-6.588"
-            stroke="rgba(0,163,255,0.45)"
+            stroke="rgba(196,38,35,0.45)"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}

@@ -9,7 +9,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         height={43.4}
         rx={5}
         transform="translate(260 1111.989)"
-        fill="#d4f0ff"
+        fill="rgba(196,38,35,0.17)"
       />
       <g data-name="Grupo 3203" fill="none">
         <path
@@ -18,7 +18,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         />
         <path
           data-name="Linha 48"
-          stroke="rgba(0,163,255,0.45)"
+          stroke="rgba(196,38,35,0.45)"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -26,7 +26,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         />
         <path
           data-name="Linha 49"
-          stroke="#00a3ff"
+          stroke="#c42623"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -34,7 +34,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         />
         <path
           data-name="Linha 50"
-          stroke="#00a3ff"
+          stroke="#c42623"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -42,7 +42,7 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
         />
         <path
           data-name="Linha 51"
-          stroke="#00a3ff"
+          stroke="#c42623"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}

@@ -14,6 +14,8 @@ import { StyledSpan } from "../styled-components/StyledSpan";
 import Techpark from "../Static/svg/Techpark";
 
 import SmartphoneWithBg from '../Static/svg/SmartphoneWithBg'
+import EmailIcon from '../Static/svg/EmailIcon'
+
 import Save from '../Static/svg/Save'
 import Heart from '../Static/svg/Heart'
 import Pin from "../Static/svg/Pin";
@@ -88,7 +90,7 @@ export function Contato() {
 
                             <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px]">
                                 <Box className="flex items-center gap-3">
-                                    <SmartphoneWithBg />
+                                    <EmailIcon />
                                     <StyledSpan color="#002137" fontFamily="Myriad Regular" fontSize="1.125rem">
                                         E-mail
                                     </StyledSpan>
@@ -169,7 +171,7 @@ export function Contato() {
                    <Box className="sm:w-[40%] sm:h-[330px] xl:h-[460px] lg:w-auto sm:flex sm:items-end">
                         <Box className="sm:w-[280px] p-7 sm:h-[165px] border border-[#006bc996] rounded-md relative">
                             <Box className="bg-white p-2 shadow-card inline-block rounded-lg absolute left-7 -top-7">
-                            <span className="rotate-45 block">
+                            <span className="block">
                             <RocketWhite />
                             </span>
                             </Box>
@@ -228,8 +230,8 @@ export function Contato() {
                         </Box>
 
                         <Box className="mt-12">
-                            <StyledSpan onClick={handleOpen} color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem" className="flex items-center gap-2 cursor-pointer hover:text-black group duration-300">
-                                <Pin className="stroke-[#006CC9] group-hover:stroke-black"/>
+                            <StyledSpan onClick={handleOpen} color="#C42623" fontFamily="Myriad SemiBold" fontSize="1.125rem" className="flex items-center gap-2 cursor-pointer hover:text-black group duration-300">
+                                <Pin className="stroke-[#C42623] group-hover:stroke-black"/>
                                 Ver no mapa
                             </StyledSpan>
                         </Box>

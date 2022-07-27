@@ -4,58 +4,57 @@ const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElem
   <svg
     data-name="Grupo 1209"
     xmlns="http://www.w3.org/2000/svg"
-    width={35.558}
-    height={35.558}
+    width={41.927}
+    height={41.927}
     {...props}
   >
     <rect
       data-name="Ret\xE2ngulo 818"
-      width={35.558}
-      height={35.558}
+      width={41.927}
+      height={41.927}
       rx={5}
-      fill="rgba(0,163,255,0.13)"
+      fill="rgba(196,38,35,0.13)"
     />
     <g data-name="Grupo 1280" fill="none">
-      <path data-name="Caminho 2225" d="M4.333 4.333h26.892v26.892H4.333Z" />
+      <path data-name="Caminho 2225" d="M5.109 5.109h31.708v31.708H5.109Z" />
       <path
         data-name="Linha 38"
-        stroke="rgba(0,163,255,0.6)"
+        stroke="rgba(196,38,35,0.6)"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M24.502 11.056v.011"
+        d="M28.89 13.036v.013"
       />
       <path
         data-name="Caminho 2226"
-        d="m24.502 18.9-3.922-5.6a4.482 4.482 0 1 1 7.843 0l-3.922 5.6"
-        stroke="rgba(0,163,255,0.6)"
+        d="m28.89 22.285-4.624-6.606a5.285 5.285 0 1 1 9.248 0l-4.624 6.606"
+        stroke="rgba(196,38,35,0.6)"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
       />
       <path
         data-name="Caminho 2227"
-        d="m16.094 9.655-1.677-.84-6.723 3.361v14.567l6.723-3.361 6.723 3.361 6.723-3.361V21.14"
-        stroke="#00a3ff"
+        d="M18.982 11.385 17 10.394l-7.927 3.964v17.175L17 27.569l7.927 3.964 7.927-3.964v-2.642"
+        stroke="#c42623"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
       />
       <path
         data-name="Linha 39"
-        stroke="#00a3ff"
+        stroke="#c42623"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M14.631 9.014v14.043"
+        d="M17.252 10.628v16.558"
       />
       <path
-        data-name="Linha 40"
-        stroke="#00a3ff"
+        data-name="Caminho 2314"
+        d="M24.979 24.979v6.623"
+        stroke="#c42623"
         strokeLinecap="round"
-        strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M21.184 21.184v5.617"
       />
     </g>
   </svg>

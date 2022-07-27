@@ -112,7 +112,7 @@ export function Solucoes() {
                     </Box>
 
                     <Box className="h-[15%] lg:h-[15%]">
-                      <Link className="h-full" to=''>
+                      <Link onClick={scrollToTop} className="h-full" to='/contato'>
                         <StyledSpan color="#006CC9" fontSize="1.125rem" fontFamily="Myriad SemiBold" className="flex justify-center items-center h-full">
                             Fale com nosso time de especialistas
                         </StyledSpan>

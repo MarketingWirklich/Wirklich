@@ -85,7 +85,7 @@ body {
 
 .bg-empresa {
 
-    background-image: url(https://uploaddeimagens.com.br/images/003/947/241/full/Grupo_3335.png?1658231194);
+    background-image: url(../../public/static/img/page_empresa/bg-empresa.png);
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -100,7 +100,6 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 520px;
     display: flex;
     align-items: center;
 }
@@ -116,7 +115,7 @@ body {
 
 .bg-solucao {
 
-    background-image: url(https://uploaddeimagens.com.br/images/003/948/827/full/PRETO.png?1658310832);
+    background-image: url(../../public/static/img/page_solucoes/bg-solucoes.png);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,19 +126,20 @@ body {
 
 .bg-contato {
 
-    background-image: url(https://uploaddeimagens.com.br/images/003/948/971/full/FUNDO_APRESENTA%C3%87%C3%83O.png?1658321300);
+    background-image: url(../../public/static/img/page_contato/bg-contato.png);
     width: 100vw;
     max-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 420px;
+    background-position: center;
+    height: 480px;
     display: flex;
     align-items: center;
 }
 
 .bg-footerbanner {
 
-    background-image: url(https://uploaddeimagens.com.br/images/003/943/670/full/Grupo_1153.png?1657906592);
+    background-image: url(../../public/static/img/banner-footer.png);
     background-size: cover;
     background-position: center;
     height: 550px;
