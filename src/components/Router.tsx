@@ -12,19 +12,12 @@ export function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/empresa" element={<Empresa />} />
-            <Route path="/solu%C3%A7%C3%B5es" element={<Solucoes />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/meio-ambiente" element={<MeioAmbiente />} />
-
-
-
-            <Route path="/instagram" element={<Instagram />} />
-
-
-            {/* Páginas do Blog */}
-
-            <Route path="/blog/revolucao-40-inspira-ampliacao-da-wirklich" element={<Revolução40/>} />
+            <Route path='/empresa' element={<Empresa />} />
+            <Route path='/solu%C3%A7%C3%B5es' element={<Solucoes />} />
+            <Route path='/contato' element={<Contato />} />
+            <Route path='/meio-ambiente' element={<MeioAmbiente />} />
+            <Route path='/instagram' element={<Instagram />} />
+            <Route path='/blog/revolucao-40-inspira-ampliacao-da-wirklich' element={<Revolução40/>} />
         </Routes>
     )
 }
