@@ -12,7 +12,7 @@ export function Router() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="https://wirklich.vercel.app/empresa" element={<Empresa />} />
+            <Route path="/empresa" element={<Empresa />} />
             <Route path="/solu%C3%A7%C3%B5es" element={<Solucoes />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/meio-ambiente" element={<MeioAmbiente />} />
