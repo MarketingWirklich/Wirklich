@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Contato } from "../pages/Contato";
 import { Empresa } from "../pages/Empresa";
 import { Home } from "../pages/Home";
@@ -9,8 +9,11 @@ import { Solucoes } from "../pages/Solucoes";
 
 export function Router() {
 
+    const location = useLocation()
+
+
     return (
-        <Routes>
+        <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path='/empresa' element={<Empresa />} />
             <Route path='/solu%C3%A7%C3%B5es' element={<Solucoes />} />
