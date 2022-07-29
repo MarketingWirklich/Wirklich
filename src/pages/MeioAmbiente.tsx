@@ -17,9 +17,9 @@ import Money from '../Static/svg/Money'
 import Check from '../Static/svg/Check'
 import { Footer } from "../components/Footer";
 
-const baseImageUrl = "../static/img/page_contato/"
-
 export function MeioAmbiente() {
+
+    const baseImageUrlMeioAmbiente = "http://wirklich.imgix.net/" 
 
     return (
         <>
@@ -226,24 +226,20 @@ export function MeioAmbiente() {
                 <StyledBox>
                     <Box className="lg:w-[55%] xl:w-[54.5%] 2xl:w-[50%]">
                         <Box className="flex flex-col gap-5">
-                        <Box className="flex flex-col md:flex-row gap-5">
-                            <Box className="flex flex-row md:flex-col gap-[20px]">
-                                <Box className="w-[50%] md:w-[273px] lg:w-[200px] xl:w-[247px] rounded-2xl overflow-hidden">
-                                    <img className="w-full h-full" src={`${baseImageUrl}psicultura.jpg`} alt="psicultura" />
+                        <Box className="flex flex-col md:flex-col xl:flex-row gap-5">
+                            <Box className="flex flex-row md:flex-row xl:flex-col gap-[20px]">
+                                <Box className="w-[50%] md:w-[49%] md:h-[250px] lg:h-auto lg:w-[214px] xl:w-[247px] xl:h-[137px] rounded-2xl overflow-hidden">
+                                    <img className="w-full h-full object-cover" src="https://ik.imagekit.io/g3qvlxsens/galhos?ik-sdk-version=javascript-1.4.3&updatedAt=1659102354133" alt="psicultura" />
                                 </Box>
 
-                                <Box className="w-[50%] md:w-[273px] lg:w-[200px] xl:w-[247px] rounded-2xl overflow-hidden">
-                                    <img className="w-full h-full" src={`${baseImageUrl}tratemento-da-agua.jpg`} alt="" />
+                                <Box className="w-[50%] md:w-[49%] md:h-[250px] lg:h-auto lg:w-[214px] xl:w-[247px] xl:h-[137px] rounded-2xl overflow-hidden">
+                                    <img className="w-full h-full object-cover" src="http://wirklich.imgix.net/tratemento-da-agua.jpg" alt="" />
                                 </Box>
                             </Box>
 
-                            <Box className="w-full md:w-[480px] lg:w-[450px] rounded-2xl overflow-hidden">
-                                <img className="w-full" src={`${baseImageUrl}plantas-industriais-e-agricolas.png`} alt="" />
+                            <Box className="w-full md:w-full md:h-[500px] lg:w-[450px] rounded-2xl overflow-hidden">
+                                <img className="w-full" src={`${baseImageUrlMeioAmbiente}plantas-industriais-e-agricolas.jpeg`} alt="" />
                             </Box>
-                        </Box>
-
-                        <Box className="rounded-2xl overflow-hidden">
-                            <img src={`${baseImageUrl}agronomia.jpg`} alt="" />
                         </Box>
                         </Box>
 

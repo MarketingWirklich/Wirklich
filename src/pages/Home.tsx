@@ -536,35 +536,35 @@ export function Home() {
 
                 <Box className="flex sm:flex-wrap overflow-x-auto styled-scrollbar pb-10 sm:pb-0 sm:justify-center gap-5 lg:gap-7 2xl:gap-5 mt-16">
                     <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <WeightReduce />
+                        <WeightReduce className="animation-bounce"/>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Redução de peso
                         </StyledSpan>
                     </Box>
 
                     <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <HighResistence />
+                        <HighResistence  className="animation-bounce"/>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Alta resistência
                         </StyledSpan>
                     </Box>
 
                     <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <MoreDurability />
+                        <MoreDurability  className="animation-bounce"/>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Maior durabilidade
                         </StyledSpan>
                     </Box>
 
                     <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <ImpactResistence />
+                        <ImpactResistence  className="animation-bounce"/>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Resistência a impacto
                         </StyledSpan>
                     </Box>
 
                     <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <Material />
+                        <Material  className="animation-bounce"/>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Materiais recicláveis
                         </StyledSpan>
@@ -683,7 +683,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to=''>
+                        <Link to='/blog/revolucao-40-inspira-ampliacao-da-wirklich'>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>

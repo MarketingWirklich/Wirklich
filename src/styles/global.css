@@ -173,6 +173,16 @@ body {
 }
 
 
+.bg-blog {
+
+    background-image: url(../../public/static/img/page_blog/bg-blog.png);
+    height: 570px;
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 
 .carousel::-webkit-scrollbar {
@@ -319,6 +329,20 @@ body {
         transform: scale(1.3);
         opacity: 0;
     }
+
+}
+
+.animation-bounce {
+
+    animation: animation-bounce .8s infinite alternate-reverse linear;
+}
+
+@keyframes animation-bounce {
+    
+
+    0% { transform: translateY(5px);}
+
+    100% { transform: translateY(0px);}
 
 }
 
