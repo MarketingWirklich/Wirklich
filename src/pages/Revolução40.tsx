@@ -32,7 +32,7 @@ export function Revolução40() {
                         </Box>
 
                         <Box>
-                            <img src="../Static/img/page_blog/revolucao-40-inspira-ampliacao-da-wirklich.png" alt="" />
+                            <img src="https://ik.imagekit.io/g3qvlxsens/revolucao-40-inspira-ampliacao-da-wirklich_MOQ0UgZjO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659104397953" alt="" />
                         </Box>
                 </StyledBox>
 
