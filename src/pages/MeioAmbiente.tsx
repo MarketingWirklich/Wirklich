@@ -143,7 +143,7 @@ export function MeioAmbiente() {
         <Box className="sm:py-20">
             <Container>
 
-                <StyledBox>
+                <StyledBox center>
                 <StyledH2>
                     Sistema Werde Phyto
                 </StyledH2>
@@ -157,7 +157,7 @@ export function MeioAmbiente() {
                 </StyledBox>
 
 
-                <Box ref={carousel} className="flex sm:justify-center lg:justify-start sm:flex-wrap lg:flex-nowrap gap-8 overflow-x-auto scroll-smooth styled-scrollbar pb-10 sm:pb-0">
+                <Box ref={carousel} className="flex sm:justify-center lg:justify-start sm:flex-wrap lg:flex-nowrap gap-8 overflow-x-auto scroll-smooth styled-scrollbar pb-10 sm:pb-0 mt-10 lg:mt-0">
 
                     <Box ref={slide} className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
