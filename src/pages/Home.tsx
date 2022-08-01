@@ -232,7 +232,7 @@ export function Home() {
                     Desde de 2005 em constante evolução na transformação de termoplásticos
                     </StyledH2>
                     <StyledP className="mb-8" color="#707070" fontFamily="Myriad Regular">
-                    A Wirklich iniciou a sua trajetória de sucesso no ano de <strong className="text-black">2005</strong>, para atender um mercado exigente, que se ressentia da falta de empresas preparadas para desenvolver e processar <strong className="text-black">produtos injetados</strong> em polímeros com engenharia de alta e ultra performance.
+                    A Wirklich iniciou a sua trajetória de sucesso no ano de <strong className="text-black">2005</strong>, para atender um mercado exigente, que se ressentia da falta de empresas preparadas para desenvolver e processar <strong className="text-black">produtos injetados</strong> em polímeros de engenharia de alta e ultra performance.
                     </StyledP>
                     <StyledButton onClick={scrollToTop} to='/empresa'>
                         Conheça a Wirklich
@@ -274,6 +274,35 @@ export function Home() {
             </StyledBox>
 
             <Box ref={carousel2} className="flex gap-10 overflow-x-auto h-[560px] mt-12 carousel">
+
+            <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
+                    <Box className="h-[255px]">
+                        <img src="https://uploaddeimagens.com.br/images/003/947/193/full/Ret%C3%A2ngulo_893.png?1658225090" alt="" />
+                    </Box>
+                    <Box className="mt-8 h-[15px]">
+                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
+                            Ferroviário
+                        </StyledSpan>
+                    </Box>
+                    <Box className="mt-1 h-[120px]">
+                        <StyledP className="px-7" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
+                            Produção de peças para aplicação em ferrovias, como isoladores, palmilhas, buchas, placas entre outros produtos.
+                        </StyledP>
+                    </Box>
+
+                    <Box className="flex justify-center items-center h-[58px] border-t">
+                        <Link onClick={moveToFerroviario} to='/solu%C3%A7%C3%B5es' className="group">
+                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
+                                Quero saber mais
+                                <Box className="mt-1">
+                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
+                                </Box>
+                            </StyledSpan>
+                        </Link>
+                    </Box>
+                </Box>
+
+
                 <Box ref={slide2} className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
                         <img src="https://uploaddeimagens.com.br/images/003/946/527/full/Interse%C3%A7%C3%A3o_29.png?1658171048" alt="" />
@@ -328,32 +357,7 @@ export function Home() {
                     </Box>
                 </Box>
 
-                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
-                    <Box className="h-[255px]">
-                        <img src="https://uploaddeimagens.com.br/images/003/947/193/full/Ret%C3%A2ngulo_893.png?1658225090" alt="" />
-                    </Box>
-                    <Box className="mt-8 h-[15px]">
-                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
-                            Ferroviário
-                        </StyledSpan>
-                    </Box>
-                    <Box className="mt-1 h-[120px]">
-                        <StyledP className="px-7" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                            Produção de peças para aplicação em ferrovias, para isolamento elétrico da linha e para o amortecimento do sistema.
-                        </StyledP>
-                    </Box>
-
-                    <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link onClick={moveToFerroviario} to='/solu%C3%A7%C3%B5es' className="group">
-                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
-                                Quero saber mais
-                                <Box className="mt-1">
-                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
-                                </Box>
-                            </StyledSpan>
-                        </Link>
-                    </Box>
-                </Box>
+                
 
                 <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
@@ -372,33 +376,6 @@ export function Home() {
 
                     <Box className="flex justify-center items-center h-[58px] border-t">
                         <Link onClick={moveToEnergiaSolar} to='/solu%C3%A7%C3%B5es' className="group">
-                            <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
-                                Quero saber mais
-                                <Box className="mt-1">
-                                    <ArrowSlide className="rotate-180 duration-700 stroke-[#0089e7] group-hover:fill-black group-hover:stroke-black" color="#000"/>
-                                </Box>
-                            </StyledSpan>
-                        </Link>
-                    </Box>
-                </Box>
-
-                <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
-                    <Box className="h-[255px]">
-                        <img src="https://uploaddeimagens.com.br/images/003/947/197/full/Grupo_3335.png?1658225603" alt="" />
-                    </Box>
-                    <Box className="mt-8 h-[15px]">
-                        <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
-                            Automotivo
-                        </StyledSpan>
-                    </Box>
-                    <Box className="mt-1 h-[120px]">
-                        <StyledP className="px-7 w-[91%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                        A Wirklich desenvolve produtos direcionados para o mercado automotivo.
-                        </StyledP>
-                    </Box>
-
-                    <Box className="flex justify-center items-center h-[58px] border-t">
-                        <Link onClick={moveToAutomotivo} to='/solu%C3%A7%C3%B5es' className="group">
                             <StyledSpan className="flex items-center gap-3 duration-700 group-hover:text-[#000]" color="#006CC9" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Quero saber mais
                                 <Box className="mt-1">
@@ -604,7 +581,7 @@ export function Home() {
                     </StyledH3>
 
                     <StyledP color="#707070" fontFamily="Myriad Regular">
-                    A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que pode ser <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> na refrigeração industrial. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica..
+                    A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
                     </StyledP>
 
                     <Box className="bg-white px-7 py-12 rounded-xl shadow-sm flex flex-col gap-7 mt-10 mb-16">
@@ -624,6 +601,13 @@ export function Home() {
                             <Check className="w-[15%] sm:w-auto"/>
                             <StyledSpan className="w-[80%] sm:w-auto" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                 Acreditamos na sustentabilidade e em fontes de energia renováveis
+                            </StyledSpan>
+                        </Box>
+
+                        <Box className="flex items-center gap-3 justify-between sm:justify-start">
+                            <Check className="w-[15%] sm:w-auto"/>
+                            <StyledSpan className="w-[80%] sm:w-auto" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                Reduzimos a emissão de CO2
                             </StyledSpan>
                         </Box>
                     </Box> 

@@ -56,23 +56,27 @@ body {
     background-color: #006CC9;
     border-radius: 100px;
 
+
 }
 
 .styled-scrollbar::-webkit-scrollbar-track {
 
     background: rgba(128, 128, 128, 0.149);
     opacity: 0.3;
+  
+    
 }
 
 .styled-scrollbar::-webkit-scrollbar-button:start:decrement,
 .styled-scrollbar::-webkit-scrollbar-button:end:increment  {
 	display: block;
+    width: 0px;
 }
 
 .styled-scrollbar {
 
     scrollbar-color: #006CC9;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 .bg-modal {
@@ -393,6 +397,15 @@ body {
         background-image: url(https://uploaddeimagens.com.br/images/003/946/707/full/Grupo_3335.png?1658175491);
         background-size: cover;
         
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .styled-scrollbar {
+
+        scrollbar-color: #006CC9;
+        scrollbar-width: thin;
     }
 }
 

@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { AIndustria } from "../pages/AIndustria";
 import { Contato } from "../pages/Contato";
 import { Empresa } from "../pages/Empresa";
 import { Home } from "../pages/Home";
@@ -21,6 +22,8 @@ export function Router() {
             <Route path='/meio-ambiente' element={<MeioAmbiente />} />
             <Route path='/instagram' element={<Instagram />} />
             <Route path='/blog/revolucao-40-inspira-ampliacao-da-wirklich' element={<Revolução40/>} />
+            <Route path='/blog/a-industria-e-o-ecossistema-de-inovacao' element={<AIndustria/>} />
+
         </Routes>
     )
 }

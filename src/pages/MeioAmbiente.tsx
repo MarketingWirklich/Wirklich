@@ -15,11 +15,33 @@ import Expansive from '../Static/svg/Expansive'
 import Manutencion from '../Static/svg/Manutencion'
 import Money from '../Static/svg/Money'
 import Check from '../Static/svg/Check'
+import CO2 from "../Static/svg/CO2";
+import Installation from "../Static/svg/Installation";
+import EnergyCost from "../Static/svg/EnergyCost";
+import Trash from "../Static/svg/Trash";
+
 import { Footer } from "../components/Footer";
+import { useRef } from "react";
+import SlideArrow from "../Static/svg/SlideArrow";
 
 export function MeioAmbiente() {
 
     const baseImageUrlMeioAmbiente = "http://wirklich.imgix.net/" 
+
+    const carousel = useRef<any>()
+
+    const slide = useRef<any>()
+    const margin = 32
+
+    const slidePrev = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        carousel.current.scrollLeft -= slide.current.offsetWidth + margin
+    }
+   
+    const slideNext = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        carousel.current.scrollLeft += slide.current.offsetWidth + margin
+    }
 
     return (
         <>
@@ -73,7 +95,7 @@ export function MeioAmbiente() {
 
                         <Box>
                         <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                            A empresa possui um tanque para <StyledSpan color="#038A16" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que pode ser <StyledSpan color="#038A16" fontFamily="Myriad Bold">reaproveitada</StyledSpan> na refrigeração industrial. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica..
+                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
                         </StyledP>
                         </Box>
 
@@ -98,6 +120,13 @@ export function MeioAmbiente() {
                                     Acreditamos na sustentabilidade e em fontes de energia renováveis
                                 </StyledSpan>
                             </Box>
+
+                            <Box className="flex items-center gap-5">
+                                <CO2 className="w-[75px] sm:w-auto" />
+                                <StyledSpan>
+                                    Reduzimos a emissão de CO2
+                                </StyledSpan>
+                            </Box>
                         </Box>
                     </Box>
 
@@ -113,8 +142,24 @@ export function MeioAmbiente() {
 
         <Box className="sm:py-20">
             <Container>
-                <Box className="flex sm:justify-center lg:justify-start sm:flex-wrap lg:flex-nowrap gap-8 overflow-x-auto styled-scrollbar pb-10 sm:pb-0">
-                    <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
+
+                <StyledBox>
+                <StyledH2>
+                    Sistema Werde Phyto
+                </StyledH2>
+
+                <Box className="w-full sm:w-[24%] md:w-[26%] lg:w-[22%] sm:justify-end lg:relative flex" gap={1}>
+                    <SlideArrow onClick={slidePrev} className="rotate-180 cursor-pointer"/>
+                    <SlideArrow onClick={slideNext} className="cursor-pointer"/>
+                </Box>
+
+
+                </StyledBox>
+
+
+                <Box ref={carousel} className="flex sm:justify-center lg:justify-start sm:flex-wrap lg:flex-nowrap gap-8 overflow-x-auto scroll-smooth styled-scrollbar pb-10 sm:pb-0">
+
+                    <Box ref={slide} className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
                                 <Expansive />
@@ -131,7 +176,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Expansive />
+                                <Installation />
                             </StyledSpan>
                         </Box>
 
@@ -169,7 +214,51 @@ export function MeioAmbiente() {
                             </StyledP>
                         </Box>
                     </Box>
+
+                    <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
+                        <Box>
+                            <StyledSpan>
+                                <EnergyCost />
+                            </StyledSpan>
+                        </Box>
+
+                        <Box>
+                            <StyledP className="w-[80%] mt-8" color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
+                                Redução do consumo de energia.
+                            </StyledP>
+                        </Box>
+                    </Box>
+
+                    <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
+                        <Box>
+                            <StyledSpan>
+                                <Money />
+                            </StyledSpan>
+                        </Box>
+
+                        <Box>
+                            <StyledP className="w-[80%] mt-8" color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
+                                Menor custo financeiro de operação.
+                            </StyledP>
+                        </Box>
+                    </Box>
+
+                    <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
+                        <Box>
+                            <StyledSpan>
+                                <Trash />
+                            </StyledSpan>
+                        </Box>
+
+                        <Box>
+                            <StyledP className="w-[80%] mt-8" color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
+                                Redução de geração de resíduos.
+                            </StyledP>
+                        </Box>
+                    </Box>
                 </Box>
+
+
             </Container>
         </Box>
 
@@ -252,13 +341,6 @@ export function MeioAmbiente() {
                             </StyledH2>
                         </Box>
                             <Box className="flex flex-col gap-10">
-                                <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    Piscicultura: favorece a produção em entornos naturais suscetíveis de melhora ambiental.
-                                </StyledP>
-
-                                <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    Canais e lagos.
-                                </StyledP>
 
                                 <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                     Estações de tratamento de esgoto.
@@ -266,6 +348,14 @@ export function MeioAmbiente() {
 
                                 <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                     Aplicável em plantas industriais e agrícolas.
+                                </StyledP>
+
+                                <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                    Piscicultura: favorece a produção em entornos naturais suscetíveis de melhora ambiental.
+                                </StyledP>
+
+                                <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                    Canais e lagos.
                                 </StyledP>
 
                                 <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">

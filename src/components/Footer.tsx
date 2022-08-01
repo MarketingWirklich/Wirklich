@@ -129,20 +129,20 @@ export function Footer() {
                         </a>
                     </Box>
                     <Box className="lg:w-[48%] xl:w-auto">
-                        <a target='_blank' href="https://wa.me/555135510550">
+                        <a target='_blank' href="https://wa.me/5551992705141">
                         <StyledSpan color="#707070" fontSize="1.125rem" fontFamily="Myriad Regular" className="flex items-center gap-3">
                             <Box className="w-[30px] sm:w-auto">
                             <WhatsappIcon />
                             </Box>
-                            Whatsapp: (51) 3551.0550
+                            Whatsapp: (51) 99270.5141
                         </StyledSpan>
                         </a>
                     </Box>
                     <Box className="lg:w-[48%] xl:w-auto flex lg:justify-end xl:block">
-                        <a target='_blank' href="mailto:contato@wirklich.com.br">
+                        <a target='_blank' href="mailto:wirklich@wirklich.com.br">
                         <StyledSpan color="#707070" fontSize="1.125rem" fontFamily="Myriad Regular" className="flex items-center gap-3">
                             <MailIcon />
-                            contato@wirklich.com.br
+                            wirklich@wirklich.com.br
                         </StyledSpan>
                         </a>
                     </Box>

@@ -19,7 +19,7 @@ export function FooterBanner({onClick}: Props) {
             <Box>
                 <Box className="flex justify-center w-full">
                 <StyledH2 white className="text-center lg:w-[55%] 2xl:w-[65%]">
-                    O que para os outros é impossível, para nós é questão de tempo
+                    O que é impossível para os outros, para nós só leva mais tempo!
                 </StyledH2>
                 </Box>
                 <Box className="flex justify-center w-full">

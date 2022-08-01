@@ -37,8 +37,7 @@ export function Solucoes() {
                 </StyledSpan>
 
                 <StyledP className="mt-10 sm:w-[70%] lg:w-[45%]" color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
-                    Busca constante, através da inovação, do desenvolvimento de produtos em polímeros, para aplicações diferenciadas, com a qualidade garantida pelo sistema de gestão da qualidade, focando na satisfação dos clientes.
-                </StyledP>
+                Com máquinas de precisão, uma equipe de engenharia qualificada e experiente, processos mapeados e consolidados no controle de produção e qualidade, e um conhecimento técnico de vanguarda nas mais atuais composições de matéria prima disponíveis no mercado, conseguimos implementar, tanto no desenvolvimento de produtos quanto no serviço de terceirização de produção, consistência, repetibilidade  e qualidade consolidadas.                </StyledP>
             </Box>
 
             
@@ -81,7 +80,7 @@ export function Solucoes() {
                                 <Resistence />
                             </Box>
                             <StyledSpan  className="w-[150px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                Alta resistência
+                                Alta resistência mecânica e térmica
                             </StyledSpan>
                         </StyledSpan>
 
@@ -90,7 +89,7 @@ export function Solucoes() {
                                 <Quimics />
                             </Box>
                             <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                Eliminação de agentes químicos externos
+                                Eliminação de agentes lubrificantes
                             </StyledSpan>
                         </StyledSpan>
 
@@ -176,22 +175,12 @@ export function Solucoes() {
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
-                                <StyledSpan id="automotivo" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
-                                    Automotivo
-                                </StyledSpan>
-
-                                <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    A Wirklich desenvolve produtos direcionados para o mercado automotivo, utilizando do seu setor de pesquisa e desenvolvimento para entregar para os clientes a melhor qualidade em peças em polímeros.
-                                </StyledP>
-                            </Box>
-
-                            <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
                                 <StyledSpan id="frigorifico" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
                                     Frigorifico
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    O Dedo Depenador de Aves é o principal produto da Wirklich no mercado avícola. É produzido com poliuretano termoplástico, o que o torna resistente à hidrólise e com uma durabilidade 3 vezes maior.
+                                    Produzimos e desenvolvemos diversos itens para o segmento, principalmente na movimentação de carcaças de aves, suínos e bovinos.
                                 </StyledP>
                             </Box>
 
@@ -201,7 +190,7 @@ export function Solucoes() {
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    A Wirklich quebrou um paradigma no mercado agrícola, através da substituição de importantes peças de metal por peças de plástico de alta performance, reduzindo consideravelmente o peso das peças.
+                                    A Wirklich quebrou um paradigma no mercado agrícola, através da substituição de importantes peças de metal por peças de plástico de alta performance, reduzindo consideravelmente o peso das peças e mantendo as propriedades mecânicas de resistência necessárias.
                                 </StyledP>
                             </Box>
 
@@ -211,7 +200,7 @@ export function Solucoes() {
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    A Wirklich vem atuando diretamente em prol do meio ambiente, desenvolvendo produtos que integram ecologia e tecnologia para revitalização da qualidade de água de córregos, rios, lagos e lagoas (artificiais ou naturais).
+                                    A Wirklich vem atuando diretamente em prol do meio ambiente, desenvolvendo produtos que integram ecologia e tecnologia para revitalização da qualidade de água de córregos, rios, lagos e lagoas (artificiais ou naturais). Através de produto próprio patenteado <Link className="text-green-700" to='/meio-ambiente'>WERDE</Link>
                                 </StyledP>
                             </Box>
 
@@ -231,7 +220,7 @@ export function Solucoes() {
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    Oferecemos o serviço exclusivo de terceirização de mão de obra, com máquinas e equipamentos de altíssima qualidade à disposição de nossos clientes.
+                                    Oferecemos o serviço customizado de terceirização de produção através de um parque de máquinas e equipamentos de altíssima qualidade e precisão à disposição dos nossos clientes.
                                 </StyledP>
                             </Box>
                         </Box>

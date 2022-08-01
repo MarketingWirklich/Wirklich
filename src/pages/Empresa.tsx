@@ -23,6 +23,7 @@ import LinesGreen from "../Static/svg/LinesGreen";
 import LeafSquareLittle from "../Static/svg/LeafSquareLittle";
 import Solar from "../Static/svg/Solar";
 import Energy from "../Static/svg/Energy";
+import CO2 from "../Static/svg/CO2";
 
 import { BsArrowRightShort } from 'react-icons/bs'
 
@@ -59,24 +60,34 @@ export function Empresa() {
 
         <Box className="pt-40">
             <Container>
-                <StyledBox center>
-                    <Box className="lg:w-[42%]">
-                    <StyledH2>
+                <StyledBox>
+                    <Box className="lg:w-[90%]">
+                    <StyledH2 className="lg:w-[60%]">
                         Desde de 2005 em constante evolução na transformação de termoplásticos 
                     </StyledH2>
 
                     <StyledP className="w-[90%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        Iniciamos nossas atividades na cidade de Estância Velha no ano de <StyledSpan color="#000" fontFamily="Myriad Bold">2005</StyledSpan>, entendendo que os polímeros de engenharia seriam o futuros das peças técnicas, nos especializamos na transformação de peças metálicas em peças em polímeros de alta performance.
+                    Iniciamos nossas atividades em 2005 no município de Estância Velha/RS e já em 2008 adquirimos o terreno para construção da atual sede da empresa, localizado dentro do Parque Tecnológico da Universidade Feevale em Campo Bom - RS. 
+                    Desde a abertura da empresa, nosso fundador, que iniciou sua jornada no nosso segmento pela atuação junto à multinacionais de matéria prima, sempre teve o entendimento de que os polímeros alta e ultra performance seriam o futuro das peças técnicas de engenharia, com potencial gigante na substituição de peças em metal, borracha e cerâmica por plástico.
+                    Desta forma, alinhado com o propósito de inovação e desenvolvimento impresso no DNA da empresa, em 2010 nossa atual sede foi inaugurada dentro do parque tecnológico, pois próximos à Universidade estamos sempre conectados nesse ambiente de conhecimento de vanguarda, propiciando que possamos realizar projetos em conjunto até hoje.
+
                     </StyledP>
 
                     <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        Atuamos inicialmente no mercado ferroviário desenvolvendo peças em polímeros para substituição de componentes de fixação das linhas permanentes que anteriormente eram feitas em aço.
-                    </StyledP>
+                    Através da nossa atuação inicial no mercado ferroviário, protagonizamos o desenvolvimento de peças em polímeros de alta performance que contribuíram para uma melhor performance do sistema de fixação da via permanente. Ao longo da nossa história temos desenvolvimentos nos mais diversos segmentos: médico hospitalar, calçados, avicultura, pecuária, agricultura, frigorífico, construção civil, tratamento de efluentes, automotivo, energia fotovoltaica, internet das coisas (IoT/RFID), etc... 
+                   </StyledP>
+
+                   <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                   "O que é impossível para os outros, para nós só leva mais tempo"
+                   </StyledP>
                     </Box>
 
 
              
-                <Box className="w-full lg:w-[48%]">
+                
+                </StyledBox>
+
+                <Box className="w-full lg:w-[100%] mt-10">
                     <Box className="h-full w-full lg:max-w-[800px] max-h-[60vh] aspect-video">
                     <Player
                     aspectRatio="16:9"
@@ -89,7 +100,6 @@ export function Empresa() {
                     </Player>
                     </Box>
                 </Box>
-                </StyledBox>
             </Container>
         </Box>
 
@@ -120,6 +130,24 @@ export function Empresa() {
                         <Box>
                             <StyledP color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
                                 Área de pesquisa, desenvolvimento e inovação estruturada e atuante;
+                            </StyledP>
+                        </Box>
+                    </Box>
+
+                    <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
+                        <StyledSpan className="mb-5 block">
+                            <Rocket />
+                        </StyledSpan>
+
+                        <Box className="mb-5">
+                            <StyledSpan color="#002137" fontFamily="Myriad Bold" fontSize="1.125rem">
+                                Know How
+                            </StyledSpan>
+                        </Box>
+
+                        <Box>
+                            <StyledP color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
+                                Conhecimento profundo em conversão de metal para polímero;
                             </StyledP>
                         </Box>
                     </Box>
@@ -160,23 +188,7 @@ export function Empresa() {
                         </Box>
                     </Box>
 
-                    <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
-                        <StyledSpan className="mb-5 block">
-                            <Rocket />
-                        </StyledSpan>
-
-                        <Box className="mb-5">
-                            <StyledSpan color="#002137" fontFamily="Myriad Bold" fontSize="1.125rem">
-                                Know How
-                            </StyledSpan>
-                        </Box>
-
-                        <Box>
-                            <StyledP color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
-                                Conhecimento profundo em conversão de metal para polímero;
-                            </StyledP>
-                        </Box>
-                    </Box>
+                    
                 </Box>
             </Container>
         </Box>
@@ -190,11 +202,15 @@ export function Empresa() {
                         </StyledH2>
 
                         <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                            O que é <StyledSpan fontFamily="Myriad Bold">impossível</StyledSpan> para os outros, <StyledSpan fontFamily="Myriad Bold">para nós só leva mais tempo</StyledSpan>, buscamos soluções tecnológicas e sustentáveis em polímeros, para diversos segmentos da indústria.
+                            <i>"O que é <StyledSpan fontFamily="Myriad Bold">impossível</StyledSpan> para os outros, para nós só leva mais tempo"</i>
                         </StyledP>
 
                         <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                            Nosso propósito é Desenvolver soluções sustentáveis e tecnológicas em polímeros de engenharia.
+                            <i>"Buscamos soluções tecnológicas e sustentáveis em polímeros, para diversos segmentos da indústria."</i>
+                        </StyledP>
+
+                        <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                            <i>"Nosso propósito é Desenvolver soluções sustentáveis e tecnológicas em polímeros de engenharia."</i>
                         </StyledP>
                     </Box>
 
@@ -214,14 +230,14 @@ export function Empresa() {
                                     </StyledSpan>
 
                                     <StyledSpan fontFamily="Myriad Regular" fontSize="1.375rem" color="#707070">
-                                        Sócio fundador da Wikrlich
+                                        Sócio fundador da Wirklich
                                     </StyledSpan>
                                 </Box>
                             </Box>
 
                             <Box className="mt-5">
                                 <StyledP color="#707070" fontFamily="Myriad Light" fontSize="1.125rem">
-                                    Nós da Wirklich, acreditamos que nem todo mundo pode ter uma boa ideia, mas uma grande ideia pode surgir de qualquer fonte, totalmente inesperada, e é por isso que precisamos criar condições, estimular e aceitar toda e qualquer ideia.
+                                    "Nós da Wirklich, acreditamos que nem todo mundo pode ter uma boa ideia, mas uma grande ideia pode surgir de qualquer fonte, totalmente inesperada, e é por isso que precisamos criar condições, estimular e aceitar toda e qualquer ideia."
                                 </StyledP>
                             </Box>
                         </Box>
@@ -305,7 +321,7 @@ export function Empresa() {
                         </StyledH3>
 
                         <StyledP className="my-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        A empresa possui um tanque para <StyledSpan color="#038A16" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que pode ser <StyledSpan color="#038A16" fontFamily="Myriad Bold">reaproveitada</StyledSpan> na refrigeração industrial. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
+                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
                         </StyledP>
 
                         <Box className="flex flex-col gap-8">
@@ -327,6 +343,13 @@ export function Empresa() {
                                 <Energy className="w-[75px] sm:w-auto" />
                                 <StyledSpan>
                                     Acreditamos na sustentabilidade e em fontes de energia renováveis
+                                </StyledSpan>
+                            </Box>
+
+                            <Box className="flex items-center gap-5">
+                                <CO2 className="w-[75px] sm:w-auto" />
+                                <StyledSpan>
+                                    Reduzimos a emissão de CO2
                                 </StyledSpan>
                             </Box>
                         </Box>
