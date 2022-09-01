@@ -279,7 +279,7 @@ export function Home() {
 
             <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
-                        <img src="../../public/static/img/page_home/trilhos.png" alt="" />
+                        <img src="/static/img/page_home/trilhos.png" alt="" />
                     </Box>
                     <Box className="mt-8 h-[15px]">
                         <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
