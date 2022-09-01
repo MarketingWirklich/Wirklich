@@ -14,7 +14,7 @@ import { FooterBanner } from "../components/FooterBanner";
 import { Footer } from "../components/Footer";
 import { ScrollToTop } from "../components/ScrollToTop";
  
-import { Player, DefaultUi, Youtube } from '@vime/react';
+import { Player, DefaultUi, Youtube, Video } from '@vime/react';
 import '@vime/core/themes/default.css';
 
 {/* Import de SVG's */}
@@ -334,7 +334,7 @@ export function Home() {
 
                 <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
-                        <img src={`${baseImageUrlHome}frigorifico.png`} alt="" />
+                        <img src={`/static/img/page_home/frigorifico.png`} alt="" />
                     </Box>
                     <Box className="mt-8 h-[15px]">
                         <StyledSpan className="px-8" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
@@ -343,7 +343,7 @@ export function Home() {
                     </Box>
                     <Box className="mt-1 h-[120px]">
                         <StyledP className="px-8 w-[98%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                            Produtos de poliuretano termoplástico, resistente à hidrólise, e com uma durabilidade três vezes maior.
+                            Produtos em polímeros para diversas aplicações nos  frigoríficos, principalmente na conversão de aço inox. 
                         </StyledP>
                     </Box>
 
@@ -363,7 +363,7 @@ export function Home() {
 
                 <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
-                        <img src="https://uploaddeimagens.com.br/images/003/947/196/full/Ret%C3%A2ngulo_893.png?1658225280" alt="" />
+                        <img src="/static/img/page_home/placassolares.png" alt="" />
                     </Box>
                     <Box className="mt-8 h-[15px]">
                         <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
@@ -427,8 +427,8 @@ export function Home() {
                         Tecnologia de ponta em peças especiais
                     </StyledH2>
                     <Box className="mt-10">
-                        <Box className="flex justify-center items-center w-full h-[350px] border border-gray-300 bg-blue-100 rounded-xl">
-                           VÍDEO DO ROBÔ
+                        <Box className="flex justify-center items-center w-full h-[350px]  rounded-xl overflow-hidden">
+                            <img src="/static/img/page_home/gif_peca.gif" alt="" />
                         </Box>
                     </Box>
                 </div>
@@ -479,8 +479,8 @@ export function Home() {
                 </Box>
 
                 <Box className="w-full lg:w-[45%] block md:flex lg:block md:justify-between">
-                        <Box className="flex justify-center items-center w-full md:w-[50%] lg:w-full h-[350px] border border-gray-300 bg-blue-100 rounded-xl">
-                           GIF DO GUINDASTE
+                        <Box className="flex justify-center items-center w-full md:w-[50%] lg:w-full h-[350px] bg-blue-100 rounded-xl overflow-hidden">
+                        <img className="w-full" src="/static/img/page_home/gif_guindaste.gif" alt="" />
                         </Box>
                     <Box className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:items-center mt-12 w-full lg:justify-between md:w-[40%] lg:w-full">
                         <LightBulb className="sm:w-[25%] lg:w-[30%] xl:w-[20%]"/>
