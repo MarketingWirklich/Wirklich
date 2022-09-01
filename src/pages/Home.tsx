@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-import { Box, Modal } from "@mui/material";
+import { Box, Modal, Skeleton } from "@mui/material";
 import { Navbar } from "../components/Navbar";
 import { Container } from "../styled-components/Container";
 import { StyledH1, StyledH2, StyledH3 } from "../styled-components/StyledH1";
@@ -70,6 +70,14 @@ export function Home() {
     const handleOpenModal = () => setModalOpen(true);
     const handleCloseModal = () => setModalOpen(false);
 
+    const [ isLoading, setIsLoading ] = useState(true)
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 5000)
+    }, [])
    
 
     const carousel = useRef<any>()
@@ -428,7 +436,15 @@ export function Home() {
                     </StyledH2>
                     <Box className="mt-10">
                         <Box className="flex justify-center items-center w-full h-[350px]  rounded-xl overflow-hidden">
+                            {isLoading? (
+                                <Skeleton width={532} height={570} />
+                            ) : 
+                            
+                            (
+                            
                             <img src="/static/img/page_home/gif_peca.gif" alt="" />
+
+                            )}
                         </Box>
                     </Box>
                 </div>
@@ -479,8 +495,16 @@ export function Home() {
                 </Box>
 
                 <Box className="w-full lg:w-[45%] block md:flex lg:block md:justify-between">
-                        <Box className="flex justify-center items-center w-full md:w-[50%] lg:w-full h-[350px] bg-blue-100 rounded-xl overflow-hidden">
-                        <img className="w-full" src="/static/img/page_home/gif_guindaste.gif" alt="" />
+                        <Box className="flex justify-center items-center w-full md:w-[50%] lg:w-full h-[335px] rounded-xl overflow-hidden">
+                        {isLoading? (
+                                <Skeleton width={532} height={570} />
+                            ) : 
+                            
+                            (
+                            
+                            <img src="/static/img/page_home/gif_guindaste.gif" alt="" />
+
+                            )}
                         </Box>
                     <Box className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-5 lg:items-center mt-12 w-full lg:justify-between md:w-[40%] lg:w-full">
                         <LightBulb className="sm:w-[25%] lg:w-[30%] xl:w-[20%]"/>
