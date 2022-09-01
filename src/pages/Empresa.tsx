@@ -63,7 +63,7 @@ export function Empresa() {
                 <StyledBox>
                     <Box className="lg:w-[90%]">
                     <StyledH2 className="lg:w-[60%]">
-                        Desde de 2005 em constante evolução na transformação de termoplásticos 
+                        Desde 2005 em constante evolução na transformação de termoplásticos 
                     </StyledH2>
 
                     <StyledP className="w-[90%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
@@ -118,7 +118,7 @@ export function Empresa() {
                 <Box className="flex overflow-x-auto styled-scrollbar sm:overflow-x-hidden pb-5 sm:pb-0 gap-5 lg:gap-5 sm:gap-4 xl:gap-8 mt-16 sm:flex-wrap lg:flex-nowrap">
                     <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
                         <StyledSpan className="mb-5 block">
-                            <PeD />
+                            <PeD className="animation-bounce"/>
                         </StyledSpan>
 
                         <Box className="mb-5">
@@ -136,7 +136,7 @@ export function Empresa() {
 
                     <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
                         <StyledSpan className="mb-5 block">
-                            <Rocket />
+                            <Rocket className="animation-bounce"/>
                         </StyledSpan>
 
                         <Box className="mb-5">
@@ -154,7 +154,7 @@ export function Empresa() {
 
                     <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
                         <StyledSpan className="mb-5 block">
-                            <Airplane />
+                            <Airplane className="animation-bounce"/>
                         </StyledSpan>
 
                         <Box className="mb-5">
@@ -172,7 +172,7 @@ export function Empresa() {
 
                     <Box className="border flex-none sm:flex-auto p-8 w-[240px] rounded-lg sm:p-8 lg:p-8 xl:p-10 sm:w-[263px] md:w-[370px] lg:w-[325px]">
                         <StyledSpan className="mb-5 block">
-                            <CheckInBox />
+                            <CheckInBox className="animation-bounce"/>
                         </StyledSpan>
 
                         <Box className="mb-5">
@@ -380,7 +380,6 @@ export function Empresa() {
 
 
         <ScrollToTop />
-        <WhatsappButton />
         <FooterBanner onClick={scrollToTop}/>
         <Footer />
         </>

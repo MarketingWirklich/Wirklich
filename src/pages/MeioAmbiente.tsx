@@ -162,7 +162,7 @@ export function MeioAmbiente() {
                     <Box ref={slide} className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Expansive />
+                                <Expansive className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -176,7 +176,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Installation />
+                                <Installation className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -190,7 +190,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Manutencion />
+                                <Manutencion className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -204,7 +204,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Money />
+                                <Money className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -218,7 +218,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <EnergyCost />
+                                <EnergyCost className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -232,7 +232,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Money />
+                                <Money className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -246,7 +246,7 @@ export function MeioAmbiente() {
                     <Box className="flex-none border border-gray-300 rounded-lg w-[15rem] sm:w-[18rem] md:w-[22rem] lg:w-[17rem] xl:w-[20.313rem] px-5 xl:px-10 pt-10 pb-12">
                         <Box>
                             <StyledSpan>
-                                <Trash />
+                                <Trash className="animation-bounce"/>
                             </StyledSpan>
                         </Box>
 
@@ -322,7 +322,7 @@ export function MeioAmbiente() {
                                 </Box>
 
                                 <Box className="w-[50%] md:w-[49%] md:h-[250px] lg:h-auto lg:w-[214px] xl:w-[247px] xl:h-[137px] rounded-2xl overflow-hidden">
-                                    <img className="w-full h-full object-cover" src="http://wirklich.imgix.net/tratemento-da-agua.jpg" alt="" />
+                                    <img className="w-full h-full object-cover" src="/static/img/page_werde/raiz_aquatica.jpeg" alt="" />
                                 </Box>
                             </Box>
 
@@ -344,6 +344,10 @@ export function MeioAmbiente() {
 
                                 <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                     Estações de tratamento de esgoto.
+                                </StyledP>
+
+                                <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                    Tratamento de resíduo orgânico na criação de animais. 
                                 </StyledP>
 
                                 <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">

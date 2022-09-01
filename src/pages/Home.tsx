@@ -482,12 +482,9 @@ export function Home() {
                     </StyledH2>
 
                     <StyledP className="mb-8 mt-8" color="#707070" fontFamily="Myriad Regular">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quo, recusandae sequi hic voluptas vero, fuga nulla doloribus provident nihil modi sed necessitatibus ducimus expedita harum ipsum placeat asperiores veniam.
+                    Com máquinas de precisão, uma equipe de engenharia qualificada e experiente, processos mapeados e consolidados no controle de produção e qualidade, e um conhecimento técnico de vanguarda nas mais atuais composições de matéria prima disponíveis no mercado, conseguimos implementar, tanto no desenvolvimento de produtos quanto no serviço de terceirização de produção, consistência, repetibilidade e qualidade consolidadas. 
                     </StyledP>
 
-                    <StyledP className="mb-7" color="#707070" fontFamily="Myriad Regular">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellendus voluptas laboriosam neque quo ullam tempore animi quisquam eaque, nihil nam architecto accusamus hic eum ipsam libero. Quo, ut neque!
-                    </StyledP>
 
                     <StyledButton onClick={scrollToTop} to='/contato'>
                         Entrar em contato
@@ -577,7 +574,7 @@ export function Home() {
             </Container>
         </Box>
 
-        <Box className="bg-[#F8F8FA]  py-36 lg:py-0 lg:pt-24 lg:h-[750px]">
+        <Box className="bg-[#F8F8FA] py-36 lg:py-0 lg:pt-24 lg:h-[750px]">
         <Container>
             <StyledBox>
                 <Box className="w-full lg:w-[35%]">
@@ -881,7 +878,6 @@ export function Home() {
         </Box>
         </Modal>
         <ScrollToTop />
-        <WhatsappButton />
         </div>
     )
 }

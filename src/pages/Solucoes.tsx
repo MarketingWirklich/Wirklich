@@ -35,9 +35,6 @@ export function Solucoes() {
                 <StyledSpan color="#FFF" fontFamily="Made Light" fontSize="1.5rem">
                     para a necessidade de cada cliente
                 </StyledSpan>
-
-                <StyledP className="mt-10 sm:w-[70%] lg:w-[45%]" color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
-                Com máquinas de precisão, uma equipe de engenharia qualificada e experiente, processos mapeados e consolidados no controle de produção e qualidade, e um conhecimento técnico de vanguarda nas mais atuais composições de matéria prima disponíveis no mercado, conseguimos implementar, tanto no desenvolvimento de produtos quanto no serviço de terceirização de produção, consistência, repetibilidade  e qualidade consolidadas.                </StyledP>
             </Box>
 
             
@@ -107,7 +104,7 @@ export function Solucoes() {
                 <Box className="flex justify-center lg:block">
                 <Box className="sm:w-[600px] lg:w-[450px] xl:w-[600px] sm:h-[500px] lg:h-[400px] xl:h-[461px] card-shadow rounded-xl overflow-hidden">
                     <Box className="w-full h-[85%]">
-                        <img className="w-full h-full" src="https://uploaddeimagens.com.br/images/003/948/833/full/zurich-o-que-sao-polimeros.png?1658311884" alt="" />
+                        <img className="w-full h-full" src="/static/img/page_solucoes/polimeros.gif" alt="" />
                     </Box>
 
                     <Box className="h-[15%] lg:h-[15%]">
@@ -149,7 +146,7 @@ export function Solucoes() {
                     <Box className="w-full lg:w-[40%] xl:w-[43%]">
                         <Box className="flex overflow-x-auto pb-6 lg:pb-0 styled-scrollbar lg:flex-col gap-5 sm:gap-10 lg:gap-[140px]">
                             <Box className="flex-none w-[85%] md:w-auto lg:flex-auto">
-                                <img className="w-[100%] md:w-auto" src="https://uploaddeimagens.com.br/images/003/948/871/full/Interse%C3%A7%C3%A3o_31.png?1658315996" alt="" />
+                                <img className="w-[100%] md:w-auto" src="/static/img/page_solucoes/trilhos.png" alt="" />
                             </Box>
 
                             <Box className="flex-none w-[85%] md:w-auto lg:flex-auto">
@@ -244,16 +241,16 @@ export function Solucoes() {
 
                     <Box>
                         <Box className="flex flex-col sm:flex-row gap-6 h-[390px] lg:h-[350px] xl:h-[390px]">
-                            <Box className="max-w-full sm:max-w-[60%] sm:w-[460px] lg:max-w-full lg:w-[340px] xl:w-[460px] h-full border border-gray-400 rounded-[20px] flex justify-center items-center">
-                                PLACEHOLDER - Foto do robô
+                            <Box className="max-w-full sm:max-w-[60%] sm:w-[460px] lg:max-w-full lg:w-[340px] xl:w-[460px] h-full border border-gray-400 rounded-[20px] flex justify-center items-center overflow-hidden">
+                                <img src="/static/img/page_solucoes/passarela.gif" alt="" className="w-full h-full object-cover" />
                             </Box>
 
                             <Box className="flex sm:flex-col justify-between">
-                                <Box className="w-[48%] sm:w-[240px] sm:h-[48%] border border-gray-400 rounded-[20px] flex justify-center items-center p-10 text-center">
-                                    PLACEHOLDER - Foto de produto
+                                <Box className="w-[48%] sm:w-[240px] sm:h-[190px] rounded-[20px] overflow-hidden">
+                                    <img className="w-full h-full flex-none" src="/static/img/page_solucoes/produto_werde.png" alt="" />
                                 </Box>
-                                <Box className="w-[48%] sm:w-[240px] sm:h-[48%] border border-gray-400 rounded-[20px] flex justify-center items-center p-10 text-center">
-                                    PLACEHOLDER - Foto de produto
+                                <Box className="w-[48%] sm:w-[240px] sm:h-[48%] rounded-[20px] overflow-hidden">
+                                    <img className="w-full h-full" src="/static/img/page_home/gif_peca.gif" alt="" />
                                 </Box>
                             </Box>
                         </Box>
@@ -262,7 +259,6 @@ export function Solucoes() {
             </Container>
         </Box>
         <ScrollToTop />
-        <WhatsappButton />
         <FooterBanner onClick={scrollToTop}/>
         <Footer />
         </>

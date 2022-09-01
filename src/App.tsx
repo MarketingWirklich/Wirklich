@@ -3,7 +3,7 @@ import { Router } from "./components/Router";
 
 import { ApolloProvider } from '@apollo/client'
 import { client } from './lib/apollo'
-import { MenuContext, useDrawerContext } from "./Contexts/MainContext";
+import { MenuContext } from "./Contexts/MainContext";
 
 function App() {
 

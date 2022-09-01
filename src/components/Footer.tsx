@@ -61,7 +61,7 @@ export function Footer() {
 
                             <Link onClick={moveToInovation} to="/">
                                 <StyledLink>
-                                Terceirizaçãs
+                                Terceirização
                                 </StyledLink>
                             </Link>
 

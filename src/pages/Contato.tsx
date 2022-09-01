@@ -3,7 +3,6 @@ import { Footer } from "../components/Footer";
 import { FooterBanner } from "../components/FooterBanner";
 import { Navbar } from "../components/Navbar";
 import { ScrollToTop } from "../components/ScrollToTop";
-import { WhatsappButton } from "../components/WhatsappButton";
 import { Container } from "../styled-components/Container";
 import { StyledBox } from "../styled-components/StyledBox";
 import { StyledH1, StyledH2, StyledH3 } from "../styled-components/StyledH1";
@@ -14,6 +13,7 @@ import Techpark from "../Static/svg/Techpark";
 
 import SmartphoneWithBg from '../Static/svg/SmartphoneWithBg'
 import EmailIcon from '../Static/svg/EmailIcon'
+import WhatsIcon from '../Static/svg/WhatsIcon'
 
 import Save from '../Static/svg/Save'
 import Pin from "../Static/svg/Pin";
@@ -23,7 +23,6 @@ import InstagramIcon from '../Static/svg/InstagramIcon'
 import LinkedinIcon from '../Static/svg/LinkedinIcon'
 import YoutubeIcon from '../Static/svg/YoutubeIcon'
 import RocketWhite from '../Static/svg/RocketWhite'
-import { ContactForm } from "../components/ContactForm";
 import { StyledButtonForm } from "../styled-components/StyledButton";
 
 import { FiHeart } from 'react-icons/fi'
@@ -63,7 +62,7 @@ export function Contato() {
         <Box className="pt-32">
             <Container>
                 <StyledBox reverse>
-                    <Box className="lg:w-[45%] xl:w-[50%]">
+                    <Box className="lg:w-[100%] xl:w-[100%]">
                         <StyledH3 fontFamily="Made Light">
                             Precisa de um atendimento urgente direcionado?
                         </StyledH3>
@@ -72,8 +71,8 @@ export function Contato() {
                             Nossa equipe estará pronta pra lhe ajudar da melhor forma possível
                         </StyledP>
 
-                        <Box className="flex flex-col sm:flex-row gap-[30px] mt-9">
-                            <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px]">
+                        <Box className="flex flex-col sm:flex-row gap-[30px] mt-9 flex-wrap">
+                            <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px] flex-none">
                                 <Box className="flex items-center gap-3">
                                     <SmartphoneWithBg />
                                     <StyledSpan color="#002137" fontFamily="Myriad Regular" fontSize="1.125rem">
@@ -86,7 +85,7 @@ export function Contato() {
                                 </StyledSpan>
                             </Box>
 
-                            <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px]">
+                            <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px] flex-none">
                                 <Box className="flex items-center gap-3">
                                     <EmailIcon />
                                     <StyledSpan color="#002137" fontFamily="Myriad Regular" fontSize="1.125rem">
@@ -98,6 +97,22 @@ export function Contato() {
                                     contato@wirklich.com.br
                                 </StyledSpan>
                             </Box>
+
+                            <Box className="bg-[#F6F6F8] rounded-xl py-7 pl-8 w-[310px] flex-none">
+                            <a className="w-[310px]" href="https://wa.me/5551992705141" target='_blank'>
+                                <Box className="flex items-center gap-3">
+                                    <WhatsIcon />
+                                    <StyledSpan color="#002137" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                        Whatsapp
+                                    </StyledSpan>
+                                    
+                                </Box>
+
+                                <StyledSpan className="block mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                       (51) 9 9270-5141
+                                </StyledSpan>
+                                </a>
+                            </Box>    
                         </Box>
 
                         <Box className="mt-16">
@@ -132,10 +147,6 @@ export function Contato() {
                             </Box>
                         </Box>
                     </Box>
-
-                    <Box className="flex justify-center lg:block">
-                        <ContactForm />
-                    </Box>
                 </StyledBox>
             </Container>
         </Box>
@@ -143,7 +154,7 @@ export function Contato() {
         <Box>
             <Container>
                 <StyledBox className='flex-wrap' centerRow>
-                   <Box className="w-full lg:w-[25%] xl:w-[30%] 2xl:w-[30%] mt-20 lg:mt-0">
+                   <Box className="w-full lg:w-[25%] xl:w-[30%] 2xl:w-[30%] mt-20 lg:mt-20">
                       <StyledH2>
                           Já conhece nosso perfil no insta?
                       </StyledH2>
@@ -252,7 +263,6 @@ export function Contato() {
 
 
         <ScrollToTop />
-        <WhatsappButton />
         <FooterBanner onClick={scrollToTop} />
         <Footer />
         </>

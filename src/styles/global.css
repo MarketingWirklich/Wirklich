@@ -110,11 +110,11 @@ body {
 
 .bg-werde{
 
-    background-image: url(/public/static/img/page_contato/bg-werde.png);
+    background-image: url(/public/static/img/page_werde/banner_werde.png);
     width: 100%;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 800px;
 }
 
 .bg-solucao {
