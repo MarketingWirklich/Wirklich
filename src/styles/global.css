@@ -182,7 +182,6 @@ body {
     background-image: url(../../public/static/img/page_blog/bg-blog.png);
     height: 570px;
     background-size: cover;
-    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
 }

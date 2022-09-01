@@ -169,6 +169,8 @@ export function Home() {
             </Container>
         </SwiperSlide>
       </Swiper>
+
+
         <Container>
             <Box className="-translate-y-[60px] shadow-md flex-col sm:flex-row sm:items-center px-10 justify-between py-16 sm:py-10 z-30 relative" display='flex' bgcolor='#FFF' borderRadius={2} width='100%'>
               <Box className="overflow-x-auto w-full sm:w-[50%] lg:w-[75%] gap-8 pb-3 xl:pb-0 styled-scrollbar" display='flex'>
@@ -229,7 +231,7 @@ export function Home() {
                     SOBRE NÓS
                     </StyledSpan>
                     <StyledH2>
-                    Desde de 2005 em constante evolução na transformação de termoplásticos
+                    Desde 2005 em constante evolução na transformação de termoplásticos
                     </StyledH2>
                     <StyledP className="mb-8" color="#707070" fontFamily="Myriad Regular">
                     A Wirklich iniciou a sua trajetória de sucesso no ano de <strong className="text-black">2005</strong>, para atender um mercado exigente, que se ressentia da falta de empresas preparadas para desenvolver e processar <strong className="text-black">produtos injetados</strong> em polímeros de engenharia de alta e ultra performance.
@@ -277,7 +279,7 @@ export function Home() {
 
             <Box className="w-[27.5rem] flex flex-col justify-between flex-none h-[560px] border rounded-xl">
                     <Box className="h-[255px]">
-                        <img src="https://uploaddeimagens.com.br/images/003/947/193/full/Ret%C3%A2ngulo_893.png?1658225090" alt="" />
+                        <img src="../../public/static/img/page_home/trilhos.png" alt="" />
                     </Box>
                     <Box className="mt-8 h-[15px]">
                         <StyledSpan className="px-7" color="#002137" fontFamily="Myriad SemiBold" fontSize="1.375rem">
@@ -667,7 +669,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to='/blog/revolucao-40-inspira-ampliacao-da-wirklich'>
+                        <Link onClick={scrollToTop} to='/blog/revolucao-40-inspira-ampliacao-da-wirklich'>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>
@@ -698,7 +700,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to=''>
+                        <Link onClick={scrollToTop} to=''>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>
@@ -729,7 +731,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to=''>
+                        <Link onClick={scrollToTop} to=''>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>
@@ -760,7 +762,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to=''>
+                        <Link onClick={scrollToTop} to=''>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>
@@ -791,7 +793,7 @@ export function Home() {
                     </Box>
 
                     <Box className="px-7 mt-10">
-                        <Link to=''>
+                        <Link onClick={scrollToTop} to=''>
                             <StyledSpan className="flex items-center gap-2 group" color="#0089E7" fontFamily="Myriad SemiBold" fontSize="1.125rem">
                                 Ler mais
                                 <AiOutlineArrowRight className="mt-[2px] duration-300 group-hover"/>

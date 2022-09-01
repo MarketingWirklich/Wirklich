@@ -16,7 +16,6 @@ function App() {
     <BrowserRouter>
     <MenuContext>
     <Router />
-
     </MenuContext>
     </BrowserRouter>
     </ApolloProvider>

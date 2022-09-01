@@ -12,7 +12,7 @@ type IBlogBanner = {
 export function BlogBanner({title}: IBlogBanner) {
     return (
         <>
-        <Box className="bg-blog">
+        <Box className="bg-blog w-full">
             <Container className="h-full">
                 <Box className="flex items-center h-full">
                     <StyledH1 className="lg:w-[40%]">
