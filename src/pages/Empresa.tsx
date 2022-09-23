@@ -62,7 +62,7 @@ export function Empresa() {
             <Container>
                 <StyledBox>
                     <Box className="lg:w-[100%]">
-                    <StyledH2 className="lg:w-[50%]">
+                    <StyledH2 className="lg:w-[55%]">
                         Desde 2005 em constante evolução na transformação de termoplásticos 
                     </StyledH2>
 
