@@ -66,7 +66,7 @@ export function Empresa() {
                         Desde 2005 em constante evolução na transformação de termoplásticos 
                     </StyledH2>
 
-                    <StyledP className="w-[90%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                    <StyledP className="w-[100%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                     Iniciamos nossas atividades em 2005 no município de Estância Velha/RS e já em 2008 adquirimos o terreno para construção da atual sede da empresa, localizado dentro do Parque Tecnológico da Universidade Feevale em Campo Bom - RS. 
                     Desde a abertura da empresa, nosso fundador, que iniciou sua jornada no nosso segmento pela atuação junto à multinacionais de matéria prima, sempre teve o entendimento de que os polímeros alta e ultra performance seriam o futuro das peças técnicas de engenharia, com potencial gigante na substituição de peças em metal, borracha e cerâmica por plástico.
                     Desta forma, alinhado com o propósito de inovação e desenvolvimento impresso no DNA da empresa, em 2010 nossa atual sede foi inaugurada dentro do parque tecnológico, pois próximos à Universidade estamos sempre conectados nesse ambiente de conhecimento de vanguarda, propiciando que possamos realizar projetos em conjunto até hoje.
