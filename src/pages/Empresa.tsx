@@ -66,15 +66,15 @@ export function Empresa() {
                         Desde 2005 em constante evolução na transformação de termoplásticos 
                     </StyledH2>
 
-                    <StyledP className="w-[90%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                    Iniciamos nossas atividades em 2005 no município de Estância Velha/RS e já em 2008 adquirimos o terreno para construção da atual sede da empresa, localizado dentro do Parque Tecnológico da Universidade Feevale em Campo Bom - RS. 
-                    Desde a abertura da empresa, nosso fundador, que iniciou sua jornada no nosso segmento pela atuação junto à multinacionais de matéria prima, sempre teve o entendimento de que os polímeros alta e ultra performance seriam o futuro das peças técnicas de engenharia, com potencial gigante na substituição de peças em metal, borracha e cerâmica por plástico.
-                    Desta forma, alinhado com o propósito de inovação e desenvolvimento impresso no DNA da empresa, em 2010 nossa atual sede foi inaugurada dentro do parque tecnológico, pois próximos à Universidade estamos sempre conectados nesse ambiente de conhecimento de vanguarda, propiciando que possamos realizar projetos em conjunto até hoje.
+                    <StyledP className="w-[100%] mt-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                    Iniciamos nossas atividades em 2005 no município de Estância Velha/RS e já em 2008 adquirimos o terreno para construção da atual sede da empresa, localizado dentro do <a target='_blank' href='https://www.youtube.com/watch?v=jtFzjcMeelw'>FEEVALE TECHPARK</a>. 
+                    Desde a abertura da empresa, nosso fundador, que iniciou sua jornada no nosso segmento pela atuação junto à multinacionais de matéria prima, sempre teve o entendimento que os polímeros de alta e ultra performance seriam a base do futuro das peças de engenharia, com potencial gigante para substituição de peças em metal, borracha e cerâmica por plástico.
+                    Desta forma, alinhado com o propósito de inovação e desenvolvimento impresso no DNA da empresa, em 2010 nossa atual sede foi inaugurada dentro do parque tecnológico, pois próximos à Universidade estamos sempre conectados nesse ambiente de conhecimento de vanguarda, propiciando a realização de projetos em conjunto até hoje.
 
                     </StyledP>
 
                     <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                    Através da nossa atuação inicial no mercado ferroviário, protagonizamos o desenvolvimento de peças em polímeros de alta performance que contribuíram para uma melhor performance do sistema de fixação da via permanente. Ao longo da nossa história temos desenvolvimentos nos mais diversos segmentos: médico hospitalar, calçados, avicultura, pecuária, agricultura, frigorífico, construção civil, tratamento de efluentes, automotivo, energia fotovoltaica, internet das coisas (IoT/RFID), etc... 
+                    Através da nossa atuação inicial no mercado ferroviário, protagonizamos o desenvolvimento de peças em polímeros de alta performance que contribuíram para uma melhor desempenho do sistema de fixação da via permanente ferroviária. Ao longo da nossa história temos desenvolvimentos nos mais diversos segmentos: ferroviário, frigorífico, pecuária, agricultura, energia fotovoltaica, internet das coisas, tratamento de efluentes, construção civil e médico hospitalar.
                    </StyledP>
 
                    <StyledP className="mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
@@ -321,7 +321,7 @@ export function Empresa() {
                         </StyledH3>
 
                         <StyledP className="my-10" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
+                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que resulta na diminuição do consumo de energia.
                         </StyledP>
 
                         <Box className="flex flex-col gap-8">
@@ -358,7 +358,6 @@ export function Empresa() {
                     <Box className="lg:w-[45%] xl:w-[41%] mt-10 md:mt-0">
                         <Box className="w-[100%] md:w-[500px] lg:w-[460px] xl:w-[510px] 2xl:w-[570px] h-[250px] md:h-[300px] lg:h-[330px] md:bg-[#038a1531] rounded-[10px] relative">
                             <img className="absolute md:w-[80%] sm:w-[90%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] md:left-2/4 md:-translate-x-2/4 md:-bottom-8 2xl:-bottom-10" src="https://uploaddeimagens.com.br/images/003/947/669/full/Interse%C3%A7%C3%A3o_9.png?1658246913" alt="" />
-                            <img className="absolute -bottom-0 lg:-left-16" src="https://uploaddeimagens.com.br/images/003/947/673/full/Grupo_3180.png?1658247050" alt="" />
                         </Box> 
 
                         <Box className="mt-20">

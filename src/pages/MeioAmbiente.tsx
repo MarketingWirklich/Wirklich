@@ -76,7 +76,7 @@ export function MeioAmbiente() {
 
                     <Box className="lg:w-[45%]">
                         <StyledP color="#FFF" fontFamily="Myriad Regular" fontSize="1.125rem">
-                            Integramos ecologia e tecnologia para melhorar a qualidade da água e revitalizar córregos, rios, lagos e lagoas (artificiais e naturais), facilitando seu tratamento, valorizando o ambiente e auxiliando a natureza a retomar seu espaço e biodiversidade.
+                            Integramos ecologia e tecnologia, no tratamento de efluentes para melhorar a qualidade da água e revitalizar córregos, rios, lagos e lagoas (artificiais e naturais), facilitando seu tratamento, valorizando o ambiente e auxiliando a natureza a retomar seu espaço e biodiversidade.
                         </StyledP>
                     </Box>
                 </Box>
@@ -95,7 +95,7 @@ export function MeioAmbiente() {
 
                         <Box>
                         <StyledP color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
+                        A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que resulta na diminuição do consumo de energia.
                         </StyledP>
                         </Box>
 
@@ -133,7 +133,6 @@ export function MeioAmbiente() {
                     <Box className="lg:w-[45%] xl:w-[41%]">
                         <Box className="w-[100%] md:w-[500px] lg:w-[460px] xl:w-[510px] 2xl:w-[570px] h-[250px] md:h-[300px] lg:h-[288px] md:bg-[#038a1531] rounded-[10px] relative">
                             <img className="absolute md:w-[80%] sm:w-[90%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] md:left-2/4 md:-translate-x-2/4 md:-bottom-8 2xl:-bottom-20" src="https://uploaddeimagens.com.br/images/003/947/669/full/Interse%C3%A7%C3%A3o_9.png?1658246913" alt="" />
-                            <img className="absolute -bottom-0 lg:-left-16" src="https://uploaddeimagens.com.br/images/003/947/673/full/Grupo_3180.png?1658247050" alt="" />
                         </Box> 
                     </Box>
                 </StyledBox>
@@ -298,7 +297,7 @@ export function MeioAmbiente() {
                                 <Box>
                                 <Check />
                                 </Box>
-                                Permite uma gestão mais sustentável do recurso hídrico integrado a nível de bacia.
+                                Permite uma gestão mais sustentável do recurso hídrico integrados a respectiva bacia hidrográfica.
                             </StyledSpan>
                         </Box>
                     </Box>

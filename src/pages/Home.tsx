@@ -22,19 +22,19 @@ import ExperienceProfessional from "../Static/svg/ExperienceProfessional";
 import QualityPrecision from "../Static/svg/QualityPrecision";
 import Solutions from "../Static/svg/Solutions";
 import LightBulb from "../Static/svg/LightBulb";
-import WeightReduce from "../Static/svg/WeightReduce";
-import HighResistence from "../Static/svg/HighResistence";
-import MoreDurability from "../Static/svg/MoreDurability";
-import ImpactResistence from "../Static/svg/ImpactResistence";
-import Material from "../Static/svg/Material";
 import Leaf from "../Static/svg/Leaf";
 import Check from "../Static/svg/Check";
 import LongArrow from "../Static/svg/LongArrow";
 import ArrowSlide from "../Static/svg/ArrowSlide";
 import YoutubePlayer from "../Static/svg/YoutubePlayer";
 import SlideArrow from "../Static/svg/SlideArrow";
+
+import { BsLink45Deg } from 'react-icons/bs'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
+import { FaWeightHanging, FaRecycle } from 'react-icons/fa'
+import { RiShieldCheckFill, RiOilFill } from 'react-icons/ri'
+import { GiAnvilImpact } from 'react-icons/gi'
 
 
 
@@ -46,7 +46,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Autoplay, Navigation, Pagination } from "swiper";
-import { WhatsappButton } from "../components/WhatsappButton";
 import { useDrawerContext } from "../Contexts/MainContext";
 
 const baseImageUrlHome = "../static/img/page_home/"
@@ -324,7 +323,7 @@ export function Home() {
                     </Box>
                     <Box className="mt-1 h-[120px]">
                         <StyledP className="px-8 w-[98%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                        Substituição de peças de metal por plástico de alta performance, reduzindo consideravelmente o peso das peças.
+                        Substituição de peças de metal por plástico de alta performance, reduzindo consideravelmente o peso das peças e mantendo as propriedades de aplicação.
                         </StyledP>
                     </Box>
 
@@ -351,7 +350,7 @@ export function Home() {
                     </Box>
                     <Box className="mt-1 h-[120px]">
                         <StyledP className="px-8 w-[98%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                            Produtos em polímeros para diversas aplicações nos  frigoríficos, principalmente na conversão de aço inox. 
+                            Produtos em polímeros para diversas aplicações nos  frigoríficos, principalmente na substituição de aço inox.
                         </StyledP>
                     </Box>
 
@@ -407,7 +406,7 @@ export function Home() {
                     </Box>
                     <Box className="mt-1 h-[120px]">
                         <StyledP className="px-7 w-[91%]" color="#8A8A8A" fontFamily="Myriad Light" fontSize="1.125rem">
-                        A Wirklich vem atuando diretamente em prol do meio ambiente.
+                        A Wirklich vem atuando diretamente em prol do meio ambiente, principalmente no tratamento de recursos hídricos. 
                         </StyledP>
                     </Box>
 
@@ -482,7 +481,7 @@ export function Home() {
                     </StyledH2>
 
                     <StyledP className="mb-8 mt-8" color="#707070" fontFamily="Myriad Regular">
-                    Com máquinas de precisão, uma equipe de engenharia qualificada e experiente, processos mapeados e consolidados no controle de produção e qualidade, e um conhecimento técnico de vanguarda nas mais atuais composições de matéria prima disponíveis no mercado, conseguimos implementar, tanto no desenvolvimento de produtos quanto no serviço de terceirização de produção, consistência, repetibilidade e qualidade consolidadas. 
+                    Com máquinas de precisão, uma empresa de engenharia qualificada e experiente, processos mapeados e consolidados no controle de produção e qualidade, e um conhecimento técnico de vanguarda na elaboração de compostos poliméricos conseguimos implementar tanto no desenvolvimento de produtos quanto no serviço de terceirização de produção, consistência, repetibilidade e qualidade consolidadas. 
                     </StyledP>
 
 
@@ -535,38 +534,57 @@ export function Home() {
                 </StyledBox>
 
                 <Box className="flex sm:flex-wrap overflow-x-auto styled-scrollbar pb-10 sm:pb-0 sm:justify-center gap-5 lg:gap-7 2xl:gap-5 mt-16">
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <WeightReduce className="animation-bounce"/>
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <FaWeightHanging color='#C42623' size={20}/>
+                        </Box>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Redução de peso
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <HighResistence  className="animation-bounce"/>
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <BsLink45Deg color='#C42623' size={30}/>
+                        </Box>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
-                            Alta resistência
+                            Alta resistência mecânica e termica
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <MoreDurability  className="animation-bounce"/>
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <RiShieldCheckFill color='#C42623' size={25}/>
+                        </Box>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
                             Maior durabilidade
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <ImpactResistence  className="animation-bounce"/>
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <FaRecycle color='#C42623' size={25}/>
+                        </Box>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
-                            Resistência a impacto
+                            Materiais recicláveis
                         </StyledSpan>
                     </Box>
 
-                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[50px] lg:w-[16.25rem] 2xl:px-[40px] py-6 rounded-xl">
-                        <Material  className="animation-bounce"/>
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <RiOilFill color='#C42623' size={25}/>
+                        </Box>
                         <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
-                            Materiais recicláveis
+                            Eliminação de agentes lubrificantes
+                        </StyledSpan>
+                    </Box>
+
+                    <Box className="flex flex-none flex-col items-center justify-center gap-5 bg-white px-[40px] lg:px-[10px] w-[18rem] sm:w-[19rem] lg:w-[13.25rem] 2xl:px-[10px] py-6 rounded-xl">
+                        <Box className="w-[40px] h-[40px] flex justify-center items-center bg-[#F5DADA] rounded animation-bounce">
+                            <GiAnvilImpact color='#C42623' size={25}/>
+                        </Box>
+                        <StyledSpan className="text-center" color="#707070" fontFamily="Myriad Regular" fontSize="1.25rem">
+                            Alta resistência ao impacto
                         </StyledSpan>
                     </Box>
                 </Box>
@@ -604,7 +622,7 @@ export function Home() {
                     </StyledH3>
 
                     <StyledP color="#707070" fontFamily="Myriad Regular">
-                    A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que ocasiona diminuição do consumo de energia elétrica.
+                    A empresa possui um tanque para <StyledSpan color="#009E15" fontFamily="Myriad Bold">retenção da água da chuva</StyledSpan>, que é <StyledSpan color="#009E15" fontFamily="Myriad Bold">reaproveitada</StyledSpan> para irrigação externa. O prédio possui entrada de ventilação e iluminação natural, o que resulta na diminuição do consumo de energia.
                     </StyledP>
 
                     <Box className="bg-white px-7 py-12 rounded-xl shadow-sm flex flex-col gap-7 mt-10 mb-16">

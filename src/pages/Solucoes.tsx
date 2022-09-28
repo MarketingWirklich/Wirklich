@@ -4,18 +4,16 @@ import { Footer } from "../components/Footer";
 import { FooterBanner } from "../components/FooterBanner";
 import { Navbar } from "../components/Navbar";
 import { ScrollToTop } from "../components/ScrollToTop";
-import { WhatsappButton } from "../components/WhatsappButton";
 import { Container } from "../styled-components/Container";
 import { StyledBox } from "../styled-components/StyledBox";
 import { StyledH1, StyledH2 } from "../styled-components/StyledH1";
 import { StyledP } from "../styled-components/StyledP";
 import { StyledSpan } from "../styled-components/StyledSpan";
 
-import Weight from '../Static/svg/Weight'
-import Resistence from '../Static/svg/Resistence'
-import Durability from '../Static/svg/Durability'
-import Eco from '../Static/svg/Eco'
-import Quimics from '../Static/svg/Quimics'
+import { BsLink45Deg } from 'react-icons/bs'
+import { FaWeightHanging, FaRecycle } from 'react-icons/fa'
+import { RiShieldCheckFill, RiOilFill } from 'react-icons/ri'
+import { GiAnvilImpact } from 'react-icons/gi'
 import Inovation from '../Static/svg/Inovation'
 import { useDrawerContext } from "../Contexts/MainContext";
 
@@ -50,54 +48,67 @@ export function Solucoes() {
                     </StyledH2>
 
                     <StyledP className="sm:w-[70%] lg:w-[70%] mt-5" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                        A injeção de plásticos de engenharia e alta performance, permite que os projetos desenvolvidos para nossos clientes tenham diversos benefícios tais como:
+                        A injeção de plásticos de engenharia de alta/ultra performance, permite que os projetos desenvolvidos para nossos clientes tenham, em suas aplicações diversos benefícios, tais como:
                     </StyledP>
 
-                    <Box className="flex flex-wrap mt-12 gap-y-7 gap-x-20">
-                        <StyledSpan className="w-full sm:w-[40%] md:w-auto flex items-center gap-4">
-                            <Box>
-                                <Weight />
+                    <Box className="flex justify-between mt-12">
+                        <Box className="flex flex-col gap-3 lg:w-[49%] xl:w-[50%]">
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <FaWeightHanging color='#C42623' size={20}/>
                             </Box>
-                            <StyledSpan className="w-[150px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                            <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                 Redução de peso
                             </StyledSpan>
                         </StyledSpan>
 
-                        <StyledSpan className="w-full sm:w-[40%] md:w-auto flex items-center gap-4">
-                            <Box>
-                                <Eco />
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <RiShieldCheckFill color='#C42623' size={25}/>
+                            </Box>
+                            <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                Maior durabilidade
+                            </StyledSpan>
+                        </StyledSpan>
+
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <RiOilFill color='#C42623' size={25}/>
+                            </Box>
+                            <StyledSpan className="text-center sm:text-start" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                Eliminação de agentes lubrificantes
+                            </StyledSpan>
+                        </StyledSpan>
+                        </Box>
+
+                        <Box className="flex flex-col gap-3 lg:w-[49%] xl:w-[50%]">
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4 xl:w-auto">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <BsLink45Deg color='#C42623' size={30}/>
+                            </Box>
+                            <StyledSpan className="text-center sm:text-start" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                Alta resistência mecânica e termica
+                            </StyledSpan>
+                        </StyledSpan>
+
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <FaRecycle color='#C42623' size={25}/>
                             </Box>
                             <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
                                 Materiais recicláveis
                             </StyledSpan>
                         </StyledSpan>
 
-                        <StyledSpan className="w-full sm:w-[40%] md:w-auto flex items-center gap-4">
-                            <Box>
-                                <Resistence />
+                        <StyledSpan className="w-full h-[102px] sm:h-auto md:w-auto flex flex-col sm:flex-row items-center gap-4">
+                            <Box className='border border-[#EEC3C2] w-[43px] h-[43px] rounded-lg flex justify-center items-center'>
+                                <GiAnvilImpact color='#C42623' size={25}/>
                             </Box>
-                            <StyledSpan  className="w-[150px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                Alta resistência mecânica e térmica
+                            <StyledSpan className="text-center sm:text-start" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
+                                Alta resistência ao impacto
                             </StyledSpan>
                         </StyledSpan>
-
-                        <StyledSpan className="w-full sm:w-[40%] md:w-auto flex items-center gap-4 lg:w-[40%] xl:w-auto">
-                            <Box>
-                                <Quimics />
-                            </Box>
-                            <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                Eliminação de agentes lubrificantes
-                            </StyledSpan>
-                        </StyledSpan>
-
-                        <StyledSpan className="w-full sm:w-[40%] md:w-auto flex items-center gap-4">
-                            <Box>
-                                <Durability />
-                            </Box>
-                            <StyledSpan color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                Maior durabilidade
-                            </StyledSpan>
-                        </StyledSpan>
+                        </Box>
                     </Box>
                 </Box>
 
@@ -167,13 +178,13 @@ export function Solucoes() {
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    A Wirklich tem seu sucesso reconhecido no mercado ferroviário através da produção de peças para aplicação em ferrovias, projetadas para o isolamento elétrico da linha, bem como para o amortecimento do sistema.
+                                    A Wirklich tem seu sucesso reconhecido no mercado ferroviário nacional e internacional através da produção de peças para as mais diversas aplicações.
                                 </StyledP>
                             </Box>
 
                             <Box className="flex-none w-[100%] shadow-lg lg:shadow-none md:w-[40%] lg:w-auto border border-gray-400 p-5 lg:p-0 rounded-xl lg:rounded-none lg:border-none lg:flex-auto">
                                 <StyledSpan id="frigorifico" color="#002137" fontFamily="Made Light" fontSize="1.375rem">
-                                    Frigorifico
+                                    Frigorífico
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
@@ -197,7 +208,7 @@ export function Solucoes() {
                                 </StyledSpan>
 
                                 <StyledP className="mt-[30px]" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                                    A Wirklich vem atuando diretamente em prol do meio ambiente, desenvolvendo produtos que integram ecologia e tecnologia para revitalização da qualidade de água de córregos, rios, lagos e lagoas (artificiais ou naturais). Através de produto próprio patenteado <Link className="text-green-700" to='/meio-ambiente'>WERDE</Link>
+                                    A Wirklich vem atuando diretamente em prol do meio ambiente, desenvolvendo produtos que integram ecologia e tecnologia para revitalização da qualidade de água de córregos, rios, lagos e lagoas (artificiais ou naturais), bem como no tratamento de efluentes. Através de produto próprio patenteado <Link className="text-green-700" to='/meio-ambiente'>WERDE PHYTO</Link>, com aplicação nacional e internacional
                                 </StyledP>
                             </Box>
 
@@ -235,7 +246,7 @@ export function Solucoes() {
                         </StyledH2>
 
                         <StyledP className="lg:w-[90%] mt-8" color="#707070" fontFamily="Myriad Regular" fontSize="1.125rem">
-                            Desde seu início, a Wirklich alia os mais sólidos princípios da tradição, com o poder transformador da inovação, para trabalhar ativamente no desenvolvimento e na produção de peças de qualidade em plástico.
+                            Desde seu início, a Wirklich alia princípios com o poder transformador da inovação para trabalhar ativamente no desenvolvimento e na produção de peças de qualidade em polimeros.
                         </StyledP>
                     </Box>
 
