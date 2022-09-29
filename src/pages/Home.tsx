@@ -75,7 +75,7 @@ export function Home() {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 5000)
+        }, 3000)
     }, [])
    
 
@@ -441,7 +441,7 @@ export function Home() {
                             
                             (
                             
-                            <img src="/static/img/page_home/gif_peca.gif" alt="" />
+                            <img src="/static/img/page_home/gifrobo.gif" alt="" />
 
                             )}
                         </Box>

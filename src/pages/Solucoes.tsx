@@ -261,7 +261,7 @@ export function Solucoes() {
                                     <img className="w-full h-full flex-none" src="/static/img/page_solucoes/produto_werde.png" alt="" />
                                 </Box>
                                 <Box className="w-[48%] sm:w-[240px] sm:h-[48%] rounded-[20px] overflow-hidden">
-                                    <img className="w-full h-full" src="/static/img/page_home/gif_peca.gif" alt="" />
+                                    <img className="w-full h-full" src="/static/img/page_home/gifrobo.gif" alt="" />
                                 </Box>
                             </Box>
                         </Box>

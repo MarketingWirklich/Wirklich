@@ -174,7 +174,7 @@ export function Contato() {
                         <span className="absolute right-9 bottom-36">
                         <FiHeart size={35} className="opacity-10"/>
                         </span>
-                        <img className="absolute -right-14 sm:-right-20 xl:-right-20 2xl:-right-16" src="https://uploaddeimagens.com.br/images/003/949/873/full/Grupo_3253.png?1658343566" alt="" />
+                        <img className="absolute sm:-right-20 xl:-right-20 2xl:-right-16" src="https://uploaddeimagens.com.br/images/003/949/873/full/Grupo_3253.png?1658343566" alt="" />
                    </Box>
 
                    <Box className="sm:w-[40%] sm:h-[330px] xl:h-[460px] lg:w-auto sm:flex sm:items-end">
