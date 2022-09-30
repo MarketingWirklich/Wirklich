@@ -221,7 +221,7 @@ export function Empresa() {
                             </Box>
                             <Box className="flex flex-col sm:flex-row sm:items-center gap-5">
                                 <Box>
-                                    <img src="https://uploaddeimagens.com.br/images/003/947/416/full/ss2q2142.png?1658238472" alt="" />
+                                    <img src="https://uploaddeimagens.com.br/images/004/043/572/full/Mask_group.png?1664539366" alt="" />
                                 </Box>
 
                                 <Box className="flex flex-col gap-0">
