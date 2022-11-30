@@ -48,7 +48,9 @@ export const WEG = () => {
                 <StyledP color="#000" fontFamily="Myriad Regular" fontSize="1.125rem">
                 Fonte: CASARIN, Ricardo. WEG aponta forte crescimento do negócio de geração solar distribuída em 2022. Portal Solar. 2022. Disponível em: 
                 </StyledP>
-                <a className="text-blue-500" target='_blank' href="https://www.portalsolar.com.br/noticias/negocios/empresas/weg-aponta-forte-crescimento-do-negocio-de-geracao-solar-distribuida-em-2022">https://www.portalsolar.com.br/noticias/negocios/empresas/weg-aponta-forte-crescimento-do-negocio-de-geracao-solar-distribuida-em-2022</a>
+                <StyledP color="text-blue-500" fontFamily="Myriad Regular" fontSize='1.125rem'>
+                <a className="text-blue-500 overflow-hidden w-[100%] flex" target='_blank' href="https://www.portalsolar.com.br/noticias/negocios/empresas/weg-aponta-forte-crescimento-do-negocio-de-geracao-solar-distribuida-em-2022">https://www.portalsolar.com.br/noticias/negocios/empresas/weg-aponta-forte-crescimento-do-negocio-de-geracao-solar-distribuida-em-2022</a>
+                </StyledP>
                 </Box>
                 <BlogSlider />
             </Container>
