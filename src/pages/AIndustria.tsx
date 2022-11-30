@@ -13,7 +13,7 @@ export function AIndustria() {
     return (
         <>
         <Navbar />
-        <BlogBanner title='A Indústria e o ecossistema de inovação'/>
+        <BlogBanner/>
         <Box className="py-36">
             <Container>
                 <StyledBox>
