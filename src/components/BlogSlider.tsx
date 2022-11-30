@@ -73,7 +73,7 @@ function BlogSlider() {
                 title="Decreto que regulamenta a Lei das Ferrovias é assinado" 
                 description="O decreto assinado deve viabilizar investimentos privados para construção de ferrovias. Novos contratos de autorizações ferroviárias ainda serão assinados, como o modelo de operação de ferrovia." 
                 image="/static/img/page_blog/lei-das-ferrovias.png" 
-                link="/blog/exportacoes-do-agronegocio-em-setembro-chegam-a-US-13-9-bilhoes-com-aumento-de-38-4"
+                link="/blog/decreto-que-regulamenta-a-lei-das-ferrovias-e-assinado"
                 />
                 </Box>
 
