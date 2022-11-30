@@ -13,7 +13,7 @@ export function Revolução40() {
     return (
         <>
         <Navbar />
-        <BlogBanner title='Revolução 4.0 inspira ampliação da Wirklich'/>
+        <BlogBanner/>
         <Box className="py-36">
             <Container>
                 <StyledBox>

@@ -198,6 +198,22 @@ body {
     box-shadow: 0px 3px 15px #0000000b;
 }
 
+.class-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2!important;
+    -webkit-box-orient: vertical!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+
+.class-lines-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3!important;
+    -webkit-box-orient: vertical!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+
 .article-gradient {
 
     background-image: linear-gradient(to right, #b30c13, #bb2c21, #c2402e, #c9523c, #cf624b);
