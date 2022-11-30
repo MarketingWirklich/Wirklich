@@ -16,14 +16,10 @@ export const WEG = () => {
             <Box className="pt-36 pb-12">
             <Container>
                 <StyledBox>
-                        <Box className="lg:w-[50%]">
+                        <Box className="lg:w-[100%]">
                             <StyledH2>
                                 WEG aponta forte crescimento do negócio de geração solar distribuída em 2022
                             </StyledH2>
-                        </Box>
-
-                        <Box className="lg:w-[45%]">
-                            <img src="/static/img/page_blog/weg.png" alt="" />
                         </Box>
                 </StyledBox>
 

@@ -16,14 +16,10 @@ export const LeiDasFerrovias = () => {
             <Box className="pt-36 pb-12">
             <Container>
                 <StyledBox>
-                        <Box className="lg:w-[50%]">
+                        <Box className="lg:w-[100%]">
                             <StyledH2>
                                 Decreto que regulamenta a Lei das Ferrovias é assinado
                             </StyledH2>
-                        </Box>
-
-                        <Box className="lg:w-[45%]">
-                            <img src="/static/img/page_blog/lei-das-ferrovias.png" alt="" />
                         </Box>
                 </StyledBox>
 

@@ -16,14 +16,10 @@ export const ExportacaoAgronegocio = () => {
             <Box className="pt-36 pb-12">
             <Container>
                 <StyledBox>
-                        <Box className="lg:w-[50%]">
+                        <Box className="lg:w-[100%]">
                             <StyledH2>
                                 Exportações do agronegócio em setembro chegam a US$ 13,9 bilhões, com aumento de 38,4%
                             </StyledH2>
-                        </Box>
-
-                        <Box className="lg:w-[45%]">
-                            <img src="/static/img/page_blog/exportacao-agronegocio.png" alt="" />
                         </Box>
                 </StyledBox>
 

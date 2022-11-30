@@ -16,14 +16,10 @@ export const K2022 = () => {
             <Box className="pt-36 pb-12">
             <Container>
                 <StyledBox>
-                        <Box className="lg:w-[50%]">
+                        <Box className="lg:w-[100%]">
                             <StyledH2>
                                 K 2022 - A maior feira de plástico e borracha do mundo
                             </StyledH2>
-                        </Box>
-
-                        <Box className="lg:w-[45%]">
-                            <img src="/static/img/page_blog/k2022.png" alt="" />
                         </Box>
                 </StyledBox>
 
