@@ -59,6 +59,33 @@ function BlogSlider() {
         <Box className="pb-5">
             <Box ref={carousel} className="flex carousel w-full overflow-x-auto scroll-bar-off duration-700 py-10">
 
+                <Box className="w-[330px] sm:w-[27.1rem] flex-none mr-[60px]">
+                <BlogSlideSingle 
+                title="K 2022 - A maior feira de plástico e borracha do mundo" 
+                description="A Wirklich esteve presente na K 2022, para trazer as melhores tecnologias e inovações do setor para solo brasileiro, oferecendo o melhor do ramo. Preparamos um artigo para você conhecer a maior feira do mundo nos setores de plástico e borracha e ficar por dentro dos principais assuntos deste grande evento." 
+                image="/static/img/page_blog/k2022.png" 
+                link="/blog/K-2022-a-maior-feira-de-plastico-e-borracha-do-mundo"
+                />
+                </Box>
+
+                <Box className="w-[330px] sm:w-[27.1rem] flex-none mr-[60px]">
+                <BlogSlideSingle 
+                title="Decreto que regulamenta a Lei das Ferrovias é assinado" 
+                description="O decreto assinado deve viabilizar investimentos privados para construção de ferrovias. Novos contratos de autorizações ferroviárias ainda serão assinados, como o modelo de operação de ferrovia." 
+                image="/static/img/page_blog/lei-das-ferrovias.png" 
+                link="/blog/exportacoes-do-agronegocio-em-setembro-chegam-a-US-13-9-bilhoes-com-aumento-de-38-4"
+                />
+                </Box>
+
+                <Box className="w-[330px] sm:w-[27.1rem] flex-none mr-[60px]">
+                <BlogSlideSingle 
+                title="Exportações do agronegócio em setembro chegam a US$ 13,9 bilhões, com aumento de 38,4%" 
+                description="As exportações realizadas pelo agronegócio em 2022 chegaram a U$13,97 Bilhões em setembro deste ano. O complexo soja obteve um aumento de lucro de 24,2% devido aos preços elevados do produto." 
+                image="/static/img/page_blog/exportacao-agronegocio.png" 
+                link="/blog/exportacoes-do-agronegocio-em-setembro-chegam-a-US-13-9-bilhoes-com-aumento-de-38-4"
+                />
+                </Box>
+
                 <Box ref={slide} className="w-[330px] sm:w-[27.1rem] flex-none mr-[60px]">
                 <BlogSlideSingle 
                 title="WEG aponta forte crescimento do negócio de geração solar distribuída em 2022" 

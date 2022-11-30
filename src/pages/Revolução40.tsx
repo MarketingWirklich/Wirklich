@@ -13,8 +13,7 @@ export function Revolução40() {
     return (
         <>
         <Navbar />
-        <BlogBanner/>
-        <Box className="py-36">
+        <Box className="py-24">
             <Container>
                 <StyledBox>
                         <Box className="lg:w-[35%]">
