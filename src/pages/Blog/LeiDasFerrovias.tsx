@@ -6,7 +6,6 @@ import { Navbar } from "../../components/Navbar"
 import { StyledBox } from "../../styled-components/StyledBox"
 import { StyledH2 } from "../../styled-components/StyledH1"
 import { StyledP } from "../../styled-components/StyledP"
-import { StyledSpan } from "../../styled-components/StyledSpan"
 
 export const LeiDasFerrovias = () => {
     return (
