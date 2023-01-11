@@ -36,7 +36,7 @@ export function Router() {
             <Route path='/blog/decreto-que-regulamenta-a-lei-das-ferrovias-e-assinado' element={<LeiDasFerrovias/>} />
             <Route path='/blog/K-2022-a-maior-feira-de-plastico-e-borracha-do-mundo' element={<K2022/>} />
             <Route path='/blog/governo-atrai-investimento-de-RS-16-8-bi-em-ferrovias' element={<GovernoAtrai/>} />
-            <Route path='/blog/inteligencia-artificial-e-IOT-puxam-automacao-na-industria-frigorífica-brasileira' element={<IOT/>} />
+            <Route path='/blog/inteligencia-artificial-e-IOT-puxam-automacao-na-industria-frigorifica-brasileira' element={<IOT/>} />
             <Route path='/blog/fundos-setoriais-crescem-no-financiamento-do-agronegocio' element={<FundosSetoriais/>} />
             <Route path='/blog/meio-ambiente-e-sustentabilidade-na-mira-do-consumidor' element={<MeioAmbienteESus/>} />
 

@@ -82,7 +82,7 @@ function BlogSlider() {
                 title="Inteligência artificial e IOT puxam automação na Indústria Frigorífica Brasileira" 
                 description="O Ramo Frigorífico está caminhando rapidamente na era da indústria 4.0, através de inovações como inteligência artificial e IOT em seus processos. Muitas start-ups brasileiras têm levado novas tecnologias ao mercado com produção mais eficiente e uma gestão automatizada."
                 image="/static/img/page_blog/iot.png" 
-                link="/blog/inteligencia-artificial-e-IOT-puxam-automacao-na-industria-frigorífica-brasileira"
+                link="/blog/inteligencia-artificial-e-IOT-puxam-automacao-na-industria-frigorifica-brasileira"
                 />
                 </Box>
                 
