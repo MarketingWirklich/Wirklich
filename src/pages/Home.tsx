@@ -1936,6 +1936,12 @@ export function Home() {
             <ScrollToTop />
             </div>
         )
+    } else {
+        return
+                (
+            <>
+            </>
+        )
     }
 }
 
