@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { BlogBanner } from "../components/BlogBanner";
 import BlogSlider from "../components/BlogSlider";
 import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import { Container } from "../styled-components/Container";
 import { StyledBox } from "../styled-components/StyledBox";
 import { StyledH2 } from "../styled-components/StyledH1";

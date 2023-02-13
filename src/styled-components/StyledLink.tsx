@@ -13,5 +13,8 @@ export const StyledLinkMenu = styled.span `
 font-size: 2rem;
 color: #FFF;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 1.5rem!important;
+    }
 
 `

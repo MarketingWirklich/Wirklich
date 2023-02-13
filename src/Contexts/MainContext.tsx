@@ -18,6 +18,12 @@ interface IDrawerContextData {
     moveToMeioAmbiente: () => void;
     moveToEnergiaSolar: () => void;
     moveToServicoDeTerceirizacao: () => void;
+    langToPortuguese: () => void;
+    langToEnglish: () => void;
+    langToSpanish: () => void;
+    isPortuguese: boolean;
+    isEnglish: boolean;
+    isSpanish: boolean;
 }
 
 const DrawerContext = createContext ({} as IDrawerContextData)
@@ -318,10 +324,30 @@ export const MenuContext = ({children}:Props) => {
         
       };
 
+    const [isPortuguese, setIsPortuguese] = useState(true)
+    const [isEnglish, setIsEnglish] = useState(false)
+    const [isSpanish, setIsSpanish] = useState(false)
+
+    const langToPortuguese = () => {
+      setIsEnglish(false)
+      setIsPortuguese(true)
+    }
+
+    const langToEnglish = () => {
+      setIsPortuguese(false)
+      setIsEnglish(true)
+    }
+
+    const langToSpanish = () => {
+      setIsPortuguese(false)
+      setIsEnglish(false)
+      setIsSpanish(true)
+    }
+
 
     return (
-        <DrawerContext.Provider value={{isMenuOpen, handleMenuClick, scrollToTop, moveToTecnologia, moveToInovation, moveToNoticias, moveToFerroviario, 
-        moveToAutomotivo, moveToFrigorifico, moveToAgro, moveToMeioAmbiente, moveToEnergiaSolar, moveToServicoDeTerceirizacao  }}>
+        <DrawerContext.Provider value={{isMenuOpen, langToSpanish, isSpanish, isPortuguese, handleMenuClick, scrollToTop, moveToTecnologia, moveToInovation, moveToNoticias, moveToFerroviario, 
+        moveToAutomotivo, moveToFrigorifico, moveToAgro, moveToMeioAmbiente, moveToEnergiaSolar, moveToServicoDeTerceirizacao, isEnglish, langToPortuguese, langToEnglish  }}>
           {children}
         </DrawerContext.Provider>
     )
