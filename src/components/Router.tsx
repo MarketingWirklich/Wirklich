@@ -10,7 +10,7 @@ import { MeioAmbienteESus } from "../pages/Blog/MeioAmbienteESus";
 import { WEG } from "../pages/Blog/WEG";
 import { Contato } from "../pages/Contato";
 import { Empresa } from "../pages/Empresa";
-import { Home } from "../pages/Home";
+import Home from "../pages/Home";
 import { Instagram } from "../pages/Instagram";
 import { MeioAmbiente } from "../pages/MeioAmbiente";
 import { Revolução40 } from "../pages/Revolução40";

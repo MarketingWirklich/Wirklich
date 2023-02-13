@@ -51,7 +51,7 @@ import BlogSlider from "../components/BlogSlider";
 
 const baseImageUrlHome = "../static/img/page_home/"
 
-export function Home() {
+export default function Home() {
 
     
     const {
@@ -1937,8 +1937,7 @@ export function Home() {
             </div>
         )
     } else {
-        return
-                (
+        return (
             <>
             </>
         )
