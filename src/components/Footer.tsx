@@ -151,7 +151,7 @@ export function Footer() {
                     <Box className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between mt-12">
                         <Box>
                             <StyledSpan color="#002137" fontFamily="Myriad Regular" fontSize="1.125rem">
-                               © 2023 Wirklich. <StyledSpan fontFamily="Myriad Light">Todos os direitos reservados.</StyledSpan>
+                               © 2023 Wirklich. <StyledSpan fontFamily="Myriad Light">Todos os direitos reservados</StyledSpan>
                             </StyledSpan>
                         </Box>
     
